@@ -1,7 +1,7 @@
 ---
 title: 8 Ways To Drastically Boost Your Developer Productivity
 date: 2022-01-09T20:31:42.452Z
-author: Marihanna B
+author: John Appleseed
 summary: Supercharge your productivity with these 8 tips
 tags:
   - post
