@@ -33,7 +33,9 @@ section: article-page
 
 </article>
 
+{# Copy to clipboard feature  https://spdevuk.com/how-to-create-code-copy-button/ #}
 <script>
+
 const copyToClipboard = str => {
   const el = document.createElement('textarea'); // Create a <textarea> element
   el.value = str; // Set its value to the string that you want copied
@@ -65,16 +67,17 @@ function handleCopyClick(evt) {
   // copy all of the code to the clipboard
   copyToClipboard(innerText);
   // alert to show it worked, but you can put any kind of tooltip/popup
-  //alert(innerText);
+  // alert(innerText);
 
-  
+  // Create div success message
   const body = document.querySelector('body');
   const success = document.createElement('div');
   success.className = "success";
   body.append(success);
   success.innerHTML = "Kopirano!";
   
-  // close the div in 1 secs
+  // close the div success message by adding and removing 'show' class in 1.5 secs
+  // https://stackify.dev/960934-add-then-remove-class-after-delay-but-without-page-refresh
   success.classList.add('show');
 
   window.setTimeout(function () {
@@ -97,7 +100,5 @@ highlights.forEach(pre => {
   // append the copy button to each code block
   pre.append(hr, copy);
 });
-
-
 
 </script>

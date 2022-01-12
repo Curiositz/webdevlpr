@@ -536,7 +536,7 @@ blockquote p {
   width: 100%;
 }
 
-/* Copy to clipboard */
+/* Copy to clipboard button */
 pre button {
   color: #e4e4e4;
   box-sizing: border-box;
@@ -558,28 +558,32 @@ pre button:hover {
   background: rgba(85, 85, 85, 0.281);
 }
 
+/* Invisible code / button separator */
 pre hr {
   border: transparent;
 }
 
+/* No image click events to trigger the button */
 pre img {
   pointer-events: none
 }
 
+/* Copied success message! */
 .success {
   position: fixed;
   top: 50px;
   left: 50px;
   background-color: #444;
   color: yellowgreen;
+  font-weight: bold;
   padding: 10px 20px;
   border: 1px solid yellowgreen;
   border-radius: 5px;
-  font-weight: bold;
   opacity: 0;
   transition: all 1s ease;
 }
 
+/* Appear on click: adds 'show' class */
 .success.show {
   opacity: 1;
 }
