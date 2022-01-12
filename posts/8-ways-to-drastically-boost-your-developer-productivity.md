@@ -2,12 +2,35 @@
 title: 8 Ways To Drastically Boost Your Developer Productivity
 date: 2022-01-09T20:31:42.452Z
 author: Marihanna Brandley
-summary: Supercharge your productivity with these tipss
+summary: These eight productivity tips will supercharge your productivity as a developer. You’ll save hours of time which you can then invest in other activities.
 tags:
   - post
   - css
+  - productivity
+  - development
 ---
 <!--StartFragment-->
+
+
+You could be writing a back end API, share a public URL for that and then do live debugging as the React front end developer you are collaborating with sends a request from their application to your API.
+
+Why not do live debugging while webhook providers send you webhook requests, instead of spending hours reading their (often not so great) documentation?
+
+If you are on Linux, run this to install `expose`
+
+``` bash
+curl -s https://expose.sh/sh/install-linux.sh | sudo bash
+```
+
+If you are on a Mac, run
+
+``` bash
+curl -s https://expose.sh/sh/install-mac.sh --output install-mac.sh && sudo bash install-mac.sh
+```
+
+For every change, it takes 36 seconds before you can get feedback and try out your changes. This might not sound like a lot, but if you are doing this for every change this might happen 50 or more times per day. That’s 1800 seconds, or a half an hour that you could have spent doing other things.
+
+Over a 5 day working week, this adds up to 2.5 hours of time lost. Over a typical working year, that’s 469800 seconds or 5.4 days of time lost that you could have spent doing other things. So by solving this problem, you’ll gain an extra week of productivity.
 
 ## Introduction
 
@@ -37,13 +60,6 @@ If there is one thing that could boost your productivity the most, it's automati
 
 A lot of modern development is done on the command line with commands like `npm install`. There is IDE integration for some of these things, but I highly recommend learning and using the command line for one reason: It's scriptable. Generally, it's also faster to type a command than it is to point and click several times in your IDE to perform the same task.
 
-Whenever you find yourself repeatedly doing the same thing or typing in the same set of commands, consider putting this into a script. Once this is done properly, the script will always run the commands in the correct order and will never make a mistake.
-
-It might run in under a second compared with you taking say 30 seconds (which as we mentioned before, can add up over time).
-
-Scripts also mean you don’t have to remember the complex syntax for common commands, although you can also use shell aliases for that.
-
-A few random scripts I have set up locally:
 
 * Back up my local database
 * Dump the latest copy of the testing database and automatically import it to my local database. It calls the previous script to take a backup first, of course!
@@ -59,7 +75,7 @@ If you’ve ever used `console.log()` in JavaScript, `var_dump()` in PHP, `
 
 You print one value at a time and you generally need to write a new log statement for each value you want to see. If the value you are looking at changes, you need to log it again. Its a bit like poking around with a blindfold or in the dark. Lets not forget the possibility that you might accidentally commit your debug statements!.
 
-Human working memory is limited so once you’ve manually printed enough variables, the values will start to disappear from your mind and then you’ll have to print them again or write them down somewhere and update them as they change. Trying to keep everything in working memory takes valuable brain resources that you could redirect towards making your code work the way you want it to, following best practice or writing clean code.
+<p class="tip right-tip" style="--span-row: 1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 Enter the debugger: Set a breakpoint in your code then run your app. When your app reaches the line you set a breakpoint on, you’ll be able to see all variables in scope in the debug tab.
 
@@ -82,8 +98,6 @@ Nope, just use the fuzzy finder! Type in `Employee.js` and you’ll have found
 Here’s how it works. In, press `Ctrl+P` and then type in the name of the file you are looking for. The result will appear instantly.
 
 *The fuzzy finder in vscode*
-
-![](https://miro.medium.com/max/60/0*cJFQVuXOoB13ezB9.png?q=20)
 
 ![](https://miro.medium.com/max/700/0*cJFQVuXOoB13ezB9.png)
 
@@ -113,7 +127,7 @@ With hot reload and autosave, you can reduce this to
 
 In Java, Hot Reload is often referred to as [Hot Swapping](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/howto-hotswapping.html). For Node you can use [nodemon](https://www.npmjs.com/package/nodemon) and point it at your entry point script.
 
-I have more detailed instructions on setting up `nodemon` for Node in my other article [Six Ways To Drastically Boost Your Productivity As A Node developer](https://dev.to/robbiecahill/six-ways-to-drastically-boost-your-productivity-as-a-node-developer-1mjd).
+I have more detailed instructions on setting up `nodemon` for Node in my other article [Six Ways](https://dev.to/robbiecahill/six-ways-to-drastically-boost-your-productivity-as-a-node-developer-1mjd) To Drastically Boost Your Productivity As A Node developer.
 
 Most IDEs have an auto save feature. In vscode, its as simple as selecting `File > Auto Save`. Check your IDEs documentation for how to enable it.
 
@@ -138,22 +152,6 @@ There are some cases where manual testing is unavoidable, but if you find yourse
 Did you know you can get a public URL for a Node application being served from `localhost` or `127.0.0.1` on your local machine, even if its behind a firewall or corporate network? It doesn’t require any networking config and you can do it in a single command with `expose`, for example `expose 80 as myapi.expose.sh`.
 
 This lets you share your work early with your collaborators — such as other engineers, customers or product managers and get fast feedback without needing to set up a full deployment pipeline. The earlier you share your work the less rework you’ll need to do in the long run.
-
-You could be writing a back end API, share a public URL for that and then do live debugging as the React front end developer you are collaborating with sends a request from their application to your API.
-
-Why not do live debugging while webhook providers send you webhook requests, instead of spending hours reading their (often not so great) documentation?
-
-If you are on Linux, run this to install `expose`
-
-```
-curl -s https://expose.sh/sh/install-linux.sh | sudo bash
-```
-
-If you are on a Mac, run
-
-```
-curl -s https://expose.sh/sh/install-mac.sh --output install-mac.sh && sudo bash install-mac.sh
-```
 
 For Windows head over to the [Installation Page](https://expose.sh/install/) and download the `exe` file.
 
@@ -189,8 +187,8 @@ If you found this article useful, please consider sharing it to help others.
 
 ## Further reading
 
-If you’d like more productivity tips specific to NodeJS and JavaScript, see my other article [Six Ways To Drastically Boost Your Productivity As A Node developer](https://dev.to/robbiecahill/.six-ways-to-drastically-boost-your-productivity-as-a-node-developer-1mjd).
+If you’d like more productivity tips specific to NodeJS and JavaScript, see my other article [Six Ways](https://dev.to/robbiecahill/.six-ways-to-drastically-boost-your-productivity-as-a-node-developer-1mjd) To Drastically Boost Your Productivity As A Node developer.
 
-For NodeJS specific debugging instructions, read [Supercharge Your Node Productivity With Debugging](https://expose.sh/blog/2021/11/17/learn-how-to-debug-node-express-with-vscode/).
+For NodeJS specific debugging instructions, read [Supercharge Your Node Productivity](https://expose.sh/blog/2021/11/17/learn-how-to-debug-node-express-with-vscode/) With Debugging.
 
 <!--EndFragment-->

@@ -2,7 +2,7 @@
 title: This is the fourth example post
 date: 2020-02-03
 author: John Doe
-summary: Why contemplating our mortality can be a powerful catalyst for change
+summary: Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 tags:
   - environment
   - politics

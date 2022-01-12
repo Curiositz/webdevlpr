@@ -1,0 +1,794 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+  
+/***********
+  GENERAL
+***********/
+
+/* Defined variables */
+:root {
+  /* Fonts */
+  --thin-font: 'Montserrat', sans-serif;
+  --em-font: Georgia, 'Times New Roman', Times, serif;
+  --plain-font: Arial, 'Open Sans', sans-serif;
+
+  /* Colors */
+  --hot-pink: #ea4c89;
+  --light-pink: #ffe5ef;
+  --pastel-green: #D1E1DD;
+
+  /* Other */
+  --cb-transition: cubic-bezier(0.645,0.045,0.355,1);
+}
+
+::selection {
+  background-color: var(--pastel-green);
+}
+
+/* Default typography */
+body {
+  font-family: var(--plain-font);
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--em-font);
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+em {
+  font-weight: bold;
+  font-style: italic;
+  font-family: var(--em-font);
+}
+
+figcaption {
+  font-size: 0.6em;
+  font-weight: 100;
+}
+
+/* Default link slide animation / typography */
+a {
+  position: relative;
+  height: 120%;
+  background-image: linear-gradient(transparent 50%, var(--hot-pink) 50%, var(--hot-pink) 95%,transparent 95%,transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: 0.2s;
+  color: #000;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  transition: 0.7s var(--cb-transition);
+  background-size: 100% 100%;
+  outline: none;
+}
+
+/* Visible hr */
+hr {
+  width: 100%;
+}
+
+
+/***********
+CONTAINER
+***********/
+
+.container {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+
+/*  Grid container layout on small screens */
+header,
+footer,
+main,
+.article,
+.tag-headline,
+.all-tags {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+}
+
+/* Posts start in the middle */
+header > *,
+footer > *,
+main > *,
+.article > *,
+.tag-headline > *,
+.all-tags > * {
+  grid-column: 2;
+}
+
+/* ARTICLE & ABOUT PAGE: Space between elements */
+.article,
+.about {
+  grid-row-gap: 50px;
+}
+
+/* FRONT PAGE: space between articles */
+.articles {
+  grid-row-gap: 70px;
+}
+
+/* MENU: space between logo and menu */
+header {
+  grid-row-gap: 35px;
+}
+
+/* FOOTER: centering content and margin-top space */
+footer {
+  margin-top: 100px;
+  justify-items: center;
+}
+
+footer img {
+  width: 100px;
+}
+
+
+
+
+
+/***********
+MENU ALL
+***********/
+
+/* Word logo typography */
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+/* Menu space posts */
+.menu {
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+/* Menu items styling */
+.menu li {
+  font-family: var(--thin-font);
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+/***********
+FRONT PAGE : POSTS
+***********/
+
+/* Post grid*/
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Space between post-date and post-info */
+  grid-gap: 10px;
+  /* Centers date on small screens */
+  justify-items: center;
+}
+
+/* Tags and title centered on small screens */
+.post-tags,
+.post-title {
+  text-align: center;
+}
+
+/* Left side of the post adjusting size */
+.post-date {
+  position: relative;
+  width: 45px;
+  height: 70px;
+}
+
+/* Positioning date inside bookmark */
+.day-month {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -50%);
+  line-height: 1.3;
+}
+
+/* Date typography */
+.day-month span {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.day {
+  font-size: 28px;
+}
+
+.month {
+  font-size: 17px;
+}
+
+/* Tags typography styling */
+.post-tags {
+  display: block;
+}
+
+/* Tag icon defining width, positioning */
+.tag-icon {
+  width: 10px;
+  transform: rotate(50deg);
+  margin: 0 15px 0 0;
+  opacity: 0.6;
+}
+
+/* Spasing tags through flexbox container */
+.post-all-tags {
+  display: inline;
+}
+
+.post-all-tags .tag {
+ margin-left: 5px;
+}
+
+/* Each tag typography and spacing */
+.post-tags .tag {
+  font-family: var(--thin-font);
+  font-size: 16px;
+  position: relative;
+  top: -4.5px;
+  display: inline;
+}
+
+/* Title margin and typography */
+.post-title {
+  margin: 8px 0 15px;
+  line-height: 134%;
+  font-size: 27px;
+}
+
+/* Description typography */
+.post-content {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+
+/***********
+ARTICLE 
+***********/
+
+/* Title typography */
+.article-info h1 {
+  font-size: 47px;
+  line-height: 53px;
+}
+
+/* Date and tags beneath title - typography */
+.meta-article {
+  font-family: var(--thin-font);
+  font-size: 15px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* Date & tags - flex container & spacing */
+.meta-article{
+  display: inline-block;
+}
+
+.meta-tags {
+  display: inline;
+}
+
+.date-tags-separator {
+  margin: 0 10px;
+}
+
+.meta-tag {
+  margin-right: 10px;
+}
+
+.meta-article .meta-tag:last-of-type {
+  margin-right: 0;
+}
+
+/* h2 titles */
+.article-page h2 {
+  font-size:30px;
+  line-height: 1.3;
+}
+
+/* Pre & code formating */
+/* pre {
+  white-space: pre-wrap;
+} */
+
+code {
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Plus list style type */
+
+.article li {
+  display: grid;
+  grid-template-columns: 20px 1fr; 
+}
+
+.article li::before {
+  display: inline-block;
+  content: "+ ";
+  width: 20px;
+}
+
+/* Article links animation from below to top */
+
+.article p a {
+  background-size: 100% 100%;
+  background-image: linear-gradient(transparent 40%, var(--hot-pink) 40%, var(--hot-pink) 100%);
+  transition: background-position 0.3s ease-in, text-decoration 1s ease;
+  background-position: 0 12px;
+  text-decoration: underline wavy var(--hot-pink) 2.2px;
+}
+
+.article p a:hover,
+.article p a:focus {
+  background-position: 0 0;
+  text-decoration: transparent;
+}
+
+/* Image: from side to side */
+.article figure {
+  grid-column: 1 / -1;
+  margin: 0 10px;
+  max-width: 1000px;
+  justify-self: center;
+}
+
+/* Tip: typography and separator */
+.tip {
+  font-family: var(--em-font);
+  font-style: italic;
+  border-left: #ea4c89 2px solid;
+  padding-left: 15px;
+}
+
+/* Blockquote */
+.article blockquote {
+  font-size: 23px;
+  position: relative;
+}
+
+/* Blockquote:  quotation mark*/
+blockquote::before {
+  display: inline;
+  content: '"';
+  font-size: 2.2em;
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  opacity: .4;
+  height: 0;
+}
+
+/* Blockquote: moving text to the right so 
+it isn't overlapping quotation mark */
+blockquote p {
+  margin-left: 25px;
+}
+
+/* Placing author beneath */
+.by {
+  display: block;
+  margin-top: 15px;
+}
+
+/* Img full width */
+.article img {
+  width: 100%;
+}
+
+/* Copy to clipboard */
+pre button {
+  color: #e4e4e4;
+  box-sizing: border-box;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  user-select: none;
+  background: #555;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 0;
+  padding-bottom: 2px;
+  font-size: 0.8em;
+  position: sticky;
+  right: 0;
+  left: 0;
+  border-radius: 0 0.15rem;
+}
+
+pre button:hover {
+  background: rgba(85, 85, 85, 0.281);
+}
+
+pre hr {
+  border: transparent;
+}
+
+pre img {
+  pointer-events: none
+}
+
+.success {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: #444;
+  color: yellowgreen;
+  padding: 10px 20px;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.success.show {
+  opacity: 1;
+}
+
+/***********
+  ABOUT
+***********/
+
+/* Light pink background color */
+[data-current=about-page] {
+  background-color: var(--light-pink);
+}
+
+/* Title typography */
+.about h1 {
+  font-size: 48px;
+}
+
+/* Technologies: placing icons side by side using grid */
+.technologies-icons {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.contact a {
+  color: #4D4D4D;
+  text-decoration: underline;
+}
+.contact a:hover {
+  color: #000000;
+}
+
+/* Social icons size */
+.social-icons {
+  font-size: 30px;
+}
+
+.social-icons a {
+  margin-right: 10px;;
+}
+
+/***********
+  TAGS
+***********/
+
+/* Space separating each tag section */
+.tag-section {
+  margin-bottom: 40px;
+}
+
+/* Main tag typography */
+.main-tag {
+  font-size: 30px;
+}
+
+/* Individual tags */
+.tags-page .tag {
+  display: block;
+  font-family: var(--thin-font);
+  padding-left: 20px;
+}
+
+/* If a tag section has subtags 
+adding margin top to the first one */
+.tag-section .tag:first-of-type {
+  margin-top: 10px;
+}
+
+
+/***********
+  TAG
+***********/
+
+/* Modifying .menu bottom margin */
+.tag-page .menu {
+  margin-bottom: 35px;
+}
+
+/* 'tag' heading */
+.tag-headline h1 {
+  font-size: 47px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: var(--plain-font);
+}
+
+
+/****************
+*
+*  MEDIA QUERIES
+*
+*****************/
+
+
+@media(min-width: 550px) {
+
+  /* Front page posts */
+
+  /* Posts: bookmark & content side by side */
+  .post {
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    justify-items: left;
+  }
+
+  /* Post title & tags aligns left */
+  .post-title,
+  .post-tags {
+    text-align: left;
+  }
+
+  /* Post content max width 60 ch */
+  .post-content {
+    max-width: 60ch;
+  }
+
+  /* Article title bigger */
+  .article-info h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  /* About */
+
+  /* Title typography */
+  .about h1 {
+    font-size: 4em;
+    line-height: 1.1;
+  }
+
+  /* Technologies section: grid 
+  container info | icons */
+  .technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  /* Technologies icons placing for bigger screens */
+  .technologies-icons {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    justify-content: space-between;
+  };
+}
+
+
+@media(min-width: 800px) {
+
+  /* General: Container 
+  GRID: min margin | fraction | main content | fraction | min margin */
+  header,
+  footer,
+  main,
+  .article,
+  .tag-headline{
+    grid-template-columns: 10px 1fr 700px 1fr 10px;
+  }
+
+  /* Placing all of their direct children into 3rd column */
+  header > *,
+  footer > *,
+  main > *,
+  .article > *,
+  .tag-headline > *{
+    grid-column: 3;
+  }
+}
+
+@media(min-width: 1000px) {
+  /* Article container positioned slightly left for tips to be on the right 
+  GRID: min margin | fraction | main content | two fractions | min margin 
+  main content stayed 600 for tip on the side */
+  .article-page header,
+  .article-page footer,
+  .article {
+    grid-template-columns: 10px 1fr 600px 2fr 10px;
+  }
+
+  /* Tip on the right 
+  placed at 4 column
+  possibility to change grid row span if longer through style="--span-row: ?;"*/
+  .right-tip {
+    grid-column: 4;
+    grid-row: span var(--span-row, 1);
+    align-self: start;
+    padding: 0 15px;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  /* blockquote spanning 2 */
+  .article blockquote {
+    grid-column: 3 / span 2;
+    max-width: 60ch;
+  }
+
+  /* Blockquote:  quotation mark spilling out */
+  blockquote::before {
+    left: -30px;
+  }
+
+  /* Blockquote: reseting margin to align text
+  with the rest */
+  blockquote p {
+    margin-left: 0;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: This is the second example post
-summary: Why contemplating our mortality can be a powerful catalyst for change
+summary: Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
 date: 2020-01-01
 author: John Appleseed
 tags:

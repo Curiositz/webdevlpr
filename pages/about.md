@@ -1,33 +1,50 @@
 ---
-title: About us
+layout: layouts/contact.njk
+title: Autor
 metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
-  key: About
-  order: 1
+  key: Autor
+  order: 2
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+# Zdravo, ja sam Marijana.
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+<section class="main-about">
+  <p>Ovdje možeš čitati neke <em>bilješke</em> vezena za razvoj web-a koje pravim tokom učenja i rada na sebi.</p>
+  <br>
+  <p>Internet je dostupan mnogima i njegov potencijal za prenošenje ideja, komunikaciju i rješavanje problema je
+    skoro beskonačan. Zato je <em>web development</em> tema bloga. Takođe i da bih dijelila naučeno, koristila
+    bilješke kao referencu, upoznala kolege i uz njih učila više.</p>
+  <br>
+  <p>2021. godine sam završila smijer inženjerstvo informacionih tehnologija u Banja Luci.</p>
+</section>
 
-## Our services
+<hr>
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<section class="technologies">
+  <p>Dopada mi se ideja poznavanja full stack tehnologija, ali sam ovog trenutka fokusirana na <em>front end</em>
+    put.</p>
+  <div class="technologies-icons">
+    <img src="/static/img/html5.svg" alt="html5 logo">
+    <img src="/static/img/css3.svg" alt="css3 logo">
+    <img src="/static/img/js.svg" alt="javascript logo">
+    <img src="/static/img/git.svg" alt="git logo">
+    <img src="/static/img/figma.svg" alt="figma logo">
+    <img src="/static/img/react.svg" alt="react logo">
+  </div>
+</section>
 
-### Blue-sky thinking
+<hr>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-#### Management frameworks
-
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-##### Regulatory convergence
-
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<section class="contact">
+  <div class="contact-info">
+    <h2>Kontakt</h2>
+    <p><a href="mailto:marijana.sevo.tt@gmail.com">marijana.sevo.tt@gmail.com</a></p>
+    <div class="social-icons">
+      <a href="https://github.com/Curiositz" target="_blank"><img src="/static/img/github.svg"
+          alt="github account"></a>
+      <a href="#" target="_blank"><img src="/static/img/instagram.svg" alt="instagram account"></a>
+    </div>
+  </div>
+</section>
