@@ -58,8 +58,8 @@ const copyToClipboard = str => {
 };
 
 function handleCopyClick(evt) {
-  // get the children of the parent element
-  const { children } = evt.target.parentElement;
+  // get the children of the grandParent element
+  const { children } = evt.target.parentElement.parentElement;
   // grab the first element (we append the copy button on afterwards, so the first will be the code element)
   // destructure the innerText from the code block
   const { innerText } = Array.from(children)[0];
@@ -90,15 +90,20 @@ function handleCopyClick(evt) {
 const highlights = document.querySelectorAll('pre');
 // add the copy button to each code block
 highlights.forEach(pre => {
+
+  // Creating div parent to contain hr as separator and button
+  const parentDiv = document.createElement('div');
+  parentDiv.className = "copy-section";
+  const hr = document.createElement('hr');
   // create the copy button
   const copy = document.createElement('button');
-  const hr = document.createElement('hr');
   const message = document.createElement('span.message');
   copy.innerHTML = '<img src="/static/img/copy.svg">';
   // add the event listener to each click
   copy.addEventListener('click', handleCopyClick);
   // append the copy button to each code block
-  pre.append(hr, copy);
+  pre.append(parentDiv);
+  parentDiv.append(hr, copy);
 });
 
 </script>
