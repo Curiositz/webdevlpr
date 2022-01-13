@@ -51,14 +51,9 @@ This is the default content
 <section class="left">
   {% block left %}{% endblock %}
 </section>
+{% endraw %} ```
 
-<section class="right">
-  {% block right %}
-  This is more content
-  {% endblock %}
-</section>
-{% endraw %}
-```
+Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
   ``` html
   <article class="post">
@@ -71,7 +66,9 @@ This is the default content
     </div>
     <!-- Nesto neki komentar -->
     <div class="post-info">
-      <h1 class="post-title"><a href="{{ post.url | url }}">Section Header</a></h1 class="post-title">
+      <h1 class="post-title">
+        <a href="{{ post.url | url }}">Section Header</a>
+      </h1 class="post-title">
       <div class="post-content">
         Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
       </div>
