@@ -393,7 +393,7 @@ FRONT PAGE : POSTS
 /* Title margin and typography */
 .post-title {
   margin: 8px 0 15px;
-  line-height: 134%;
+  line-height: 150%;
   font-size: 27px;
 }
 
@@ -410,8 +410,8 @@ ARTICLE
 
 /* Title typography */
 .article-info h1 {
-  font-size: 47px;
-  line-height: 53px;
+  font-size: 35px;
+  line-height: 130%;
 }
 
 /* Date and tags beneath title - typography */
