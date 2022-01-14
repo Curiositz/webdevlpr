@@ -615,6 +615,7 @@ code.language-bash {
 
 /* Back to the top button */
 .back-button {
+  content: "⇜";
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 50px; /* Place the button at the bottom of the page */
@@ -625,11 +626,14 @@ code.language-bash {
   background-color: var(--hot-pink); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 5px 10px; /* Some padding */
+  padding: 7px 15px; /* Some padding */
   border-radius: 115px; /* Rounded corners */
-  font-size: 30px; /* Increase font size */
-  transition: 1s ease;
-  transform: rotate(90deg);
+  font-size: 40px; /* Increase font size */
+  transition: 0.5s ease;
+}
+
+.back-button img {
+  transform: translateY(5px);
 }
 
 .back-button:hover, .back-button:focus {
