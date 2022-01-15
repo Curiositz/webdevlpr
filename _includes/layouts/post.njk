@@ -38,9 +38,9 @@ section: article-page
 
 <button onclick="topFunction()" class="back-button" title="Go to top"><img src="/static/img/arrow-up.svg"></button>
 
-{# Copy to clipboard feature  https://spdevuk.com/how-to-create-code-copy-button/ #}
 <script>
-
+// COPY TO CLIPBOARD FEATURE
+// https://spdevuk.com/how-to-create-code-copy-button/ 
 const copyToClipboard = str => {
   const el = document.createElement('textarea'); // Create a <textarea> element
   el.value = str; // Set its value to the string that you want copied
@@ -111,7 +111,9 @@ highlights.forEach(pre => {
   parentDiv.append(hr, copy);
 });
 
-//Get the button:
+
+// BACK TO TOP FEATURE & PROGRESS READING INDICATOR
+// Get the button:
 toTopBtn = document.querySelector(".back-button");
 
 // When the user scrolls down 20px from the top of the document, show the button

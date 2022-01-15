@@ -416,6 +416,7 @@ ARTICLE
   background: var(--pastel-green);
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
 }
 
