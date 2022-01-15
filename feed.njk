@@ -1,15 +1,15 @@
 ---json
 {
-  "permalink": "/feed/feed.xml",
+  "permalink": "/feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "My Blog about Boats",
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "url": "https://example.com/",
-    "feedUrl": "https://example.com/feed.xml",
+    "title": "shedevl",
+    "subtitle": "Blog o razvoju web-a.",
+    "url": "https://shedevl.netlify.app/",
+    "feedUrl": "https://shedevl.netlify.app/feed.xml",
     "author": {
-      "name": "Boaty McBoatFace",
-      "email": "me@example.com"
+      "name": "Marijana Sevo",
+      "email": "marijana.sevo.tt@gmail.com"
     }
   }
 }
@@ -26,14 +26,14 @@
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.posts %}
+  {%- for post in collections.post | reverse %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
   </entry>
   {%- endfor %}
 </feed>
