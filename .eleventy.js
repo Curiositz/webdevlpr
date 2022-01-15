@@ -4,6 +4,7 @@ const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
 
@@ -13,6 +14,10 @@ module.exports = function(eleventyConfig) {
   // Eleventy Syntax highlighying plugin  
   // https://www.11ty.dev/docs/plugins/syntaxhighlight/
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Eleventy RSS plugin
+  // https://www.11ty.dev/docs/plugins/rss/
+  eleventyConfig.addPlugin(pluginRss);
 
   // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
   // layout aliases! Say you have a bunch of existing content using
@@ -27,20 +32,20 @@ module.exports = function(eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", collection => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
-    return blogs.reduce((coll, post) => {
-      const author = post.data.author;
-      if (!author) {
-        return coll;
-      }
-      if (!coll.hasOwnProperty(author)) {
-        coll[author] = [];
-      }
-      coll[author].push(post.data);
-      return coll;
-    }, {});
-  });
+  // eleventyConfig.addCollection("authors", collection => {
+  //   const blogs = collection.getFilteredByGlob("posts/*.md");
+  //   return blogs.reduce((coll, post) => {
+  //     const author = post.data.author;
+  //     if (!author) {
+  //       return coll;
+  //     }
+  //     if (!coll.hasOwnProperty(author)) {
+  //       coll[author] = [];
+  //     }
+  //     coll[author].push(post.data);
+  //     return coll;
+  //   }, {});
+  // });
 
   // Date formatting (human readable)
   // eleventyConfig.addFilter("readableDate", dateObj => {

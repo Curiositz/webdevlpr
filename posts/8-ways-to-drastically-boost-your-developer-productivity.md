@@ -12,7 +12,7 @@ tags:
 <!--StartFragment-->
 
 
-You could be writing a back end API, share a public URL for that and then do live debugging as the React front end developer you are collaborating with sends a request from their application to your API.
+You could be writing a back end API, share a public URL for that and then do live <em>debugging</em> as the React front end developer you are collaborating with sends a request from their application to your API.
 
 Why not do live debugging while webhook providers send you webhook requests, instead of spending hours reading their (often not so great) documentation?
 
