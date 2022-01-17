@@ -34,7 +34,7 @@
     <id>{{ absolutePostUrl }}</id>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <summary>{{ post.data.summary }}</summary>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
 </feed>
