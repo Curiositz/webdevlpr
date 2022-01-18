@@ -218,6 +218,21 @@ hr {
 }
 
 
+
+
+/***********
+LIVE PREVIEW
+***********/
+/* Imitating paragraph gap */
+[class*="WidgetPreviewContainer"] {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
+
+
+
+
 /***********
 CONTAINER
 ***********/

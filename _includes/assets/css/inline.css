@@ -1,4 +1,4 @@
-:root {
+/* :root {
 	--primary: blue;
 	--secondary: white;
 	--background: #FFF0EB;
@@ -77,8 +77,10 @@ pre {
 	padding: 1em;
 	margin: .5em 0;
 }
+*/
 
 /* Header Logo (style as h2) */
+/*
 header > em {
 	display: block;
 	font-size: 2em;
@@ -86,8 +88,10 @@ header > em {
 	font-weight: bold;
 	font-style: normal;
 }
+*/
 
 /* Header Nav */
+/*
 header nav ul {
 	padding: 0;
 	list-style: none;
@@ -114,8 +118,10 @@ header nav li a[href]:not(:hover) {
 header nav li a[data-current="current item"] {
 	background-color: white;
 }
+*/
 
 /* Posts List */
+/*
 article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
@@ -127,8 +133,10 @@ main > section > article > * {
 	margin-top: 0;
 	margin-bottom: .5em;
 }
+*/
 
 /* Post Tags */
+/*
 a[rel="tag"],
 a[rel="tag"]:visited {
 	display: inline-block;
@@ -156,8 +164,10 @@ a[rel="tag"]:hover {
 a[rel="tag"]:last-child {
 	margin-right: 0;
 }
+*/
 
 /* Contact Form */
+/*
 form {
   display: grid;
 	padding: 2em 0;
@@ -194,3 +204,4 @@ button {
 		font-size: 1.1rem;
 	}
 }
+*/
