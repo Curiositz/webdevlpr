@@ -234,7 +234,6 @@ footer,
 main,
 .article,
 .tag-headline,
-.all-tags,
 .progress-container {
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
@@ -245,8 +244,7 @@ header > *,
 footer > *,
 main > *,
 .article > *,
-.tag-headline > *,
-.all-tags > *{
+.tag-headline > * {
   grid-column: 2;
 }
 

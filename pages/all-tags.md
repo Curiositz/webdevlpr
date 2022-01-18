@@ -8,7 +8,6 @@ eleventyNavigation:
   key: tagovi
   order: 1
 ---
-<main class="all-tags">
   <!-- <section class="tag-section">
     <h3 class="main-tag"><a href="tag.html">Koncept</a></h3>
     <span class="tag"><a href="#">Rjesavanje problema</a></span>
@@ -93,4 +92,3 @@ eleventyNavigation:
   <nav>
     <a href="{{ '/' | url }}">← Blog index</a>
   </nav>
-</main>
