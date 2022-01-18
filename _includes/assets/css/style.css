@@ -237,10 +237,16 @@ footer,
 main,
 .article,
 .tag-headline,
-.progress-container,
-[class*="WidgetPreviewContainer"]  {
+.progress-container  {
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
+}
+
+/* LIVE PREVIEW
+Imitating article layout */
+[class*="WidgetPreviewContainer"] {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* Posts start in the middle */
