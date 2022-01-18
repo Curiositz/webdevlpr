@@ -9,9 +9,6 @@ const Post = createClass({
     const entry = this.props.entry;
 
     return html`
-      <div class="progress-container">
-        <div class="progress-bar" id="progBar"></div>
-      </div>
       <article class="article">
         <div class="article-info">
           <h1>${entry.getIn(["data", "title"], null)}</h1>
