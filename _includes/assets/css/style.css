@@ -220,18 +220,6 @@ hr {
 
 
 
-/***********
-LIVE PREVIEW
-***********/
-/* Imitating paragraph gap */
-[class*="WidgetPreviewContainer"] {
-  display: grid;
-  grid-row-gap: 40px;
-}
-
-
-
-
 
 /***********
 CONTAINER
@@ -249,7 +237,8 @@ footer,
 main,
 .article,
 .tag-headline,
-.progress-container {
+.progress-container,
+[class*="WidgetPreviewContainer"]  {
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
 }
@@ -259,13 +248,15 @@ header > *,
 footer > *,
 main > *,
 .article > *,
-.tag-headline > * {
+.tag-headline > *,
+[class*="WidgetPreviewContainer"] > * {
   grid-column: 2;
 }
 
 /* ARTICLE & ABOUT PAGE: Space between elements */
 .article,
-.about {
+.about,
+[class*="WidgetPreviewContainer"] {
   grid-row-gap: 50px;
 }
 
@@ -476,7 +467,8 @@ ARTICLE
 }
 
 /* h2 titles */
-.article-page h2 {
+.article-page h2,
+[class*="WidgetPreviewContainer"] h2 {
   font-size:30px;
   line-height: 1.3;
 }
@@ -829,7 +821,8 @@ adding margin top to the first one */
   main,
   .article,
   .tag-headline,
-  .progress-container {
+  .progress-container,
+  [class*="WidgetPreviewContainer"] {
     grid-template-columns: 10px 1fr 700px 1fr 10px;
   }
 
@@ -838,7 +831,8 @@ adding margin top to the first one */
   footer > *,
   main > *,
   .article > *,
-  .tag-headline > * {
+  .tag-headline > *,
+  [class*="WidgetPreviewContainer"] > * {
     grid-column: 3;
   }
 }
@@ -850,7 +844,8 @@ adding margin top to the first one */
   .article-page header,
   .article-page footer,
   .article,
-  .progress-container {
+  .progress-container,
+  [class*="WidgetPreviewContainer"] {
     grid-template-columns: 10px 1fr 600px 2fr 10px;
   }
 
