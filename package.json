@@ -4,8 +4,10 @@
   "description": "A blog built as a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
     "build": "npx eleventy",
+    "build:style": "postcss _site/_includes/assets/css/ --dir _site/_includes/assets/css --w",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve",
+    "dev": "npm-run-all --parallel serve build:style",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -33,8 +35,18 @@
     "markdown-it-anchor": "^5.3.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "clean-css": "^4.2.1",
+    "cssnano": "^5.0.15",
     "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "uglify-js": "^3.14.2"
-  }
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not IE 11"
+  ]
 }
