@@ -3,11 +3,11 @@
   "version": "1.0.3",
   "description": "A blog built as a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "build": "npx eleventy",
-    "build:style": "postcss _site/_includes/assets/css/ --dir _site/_includes/assets/css --w",
+    "build:eleventy": "npx eleventy",
+    "build:style": "npx postcss _site/_includes/assets/css/ --dir _site/_includes/assets/css",
+    "build": "npm-run-all build:eleventy build:style",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve",
-    "dev": "npm-run-all --parallel serve build:style",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
