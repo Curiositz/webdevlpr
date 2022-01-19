@@ -11,7 +11,7 @@ eleventyNavigation:
 # Zdravo, ja sam Marijana.
 
 <section class="main-about">
-  <p>Ovdje možeš čitati neke <em>bilješke</em> vezena za razvoj web-a koje pravim tokom učenja i rada na sebi.</p>
+  <p>Ovdje možeš čitati neke <em>bilješke</em> vezane za razvoj web-a koje pravim tokom učenja i rada na sebi.</p>
   <br>
   <p>Internet je dostupan mnogima i njegov potencijal za prenošenje ideja, komunikaciju i rješavanje problema je
     skoro beskonačan. Zato je <em>web development</em> tema bloga. Takođe i da bih dijelila naučeno, koristila
