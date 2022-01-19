@@ -247,6 +247,7 @@ Imitating article layout */
 [class*="WidgetPreviewContainer"] {
   display: grid;
   grid-template-columns: 1fr;
+  justify-self: left;
 }
 
 /* Posts start in the middle */
