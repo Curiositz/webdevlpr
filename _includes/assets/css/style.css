@@ -559,6 +559,10 @@ blockquote p {
 
 /* Pre & code */
 
+pre {
+	padding: 1.25em 1em;
+}
+
 code {
   font-family: monospace;
   white-space: pre-wrap;
