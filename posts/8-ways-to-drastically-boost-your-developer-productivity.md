@@ -10,7 +10,7 @@ tags:
   - css
   - productivity
   - development
-  - problem solving
+  - problem-solving
 ---
 <!--StartFragment-->
 

@@ -1,3 +1,13 @@
 <footer>
   <img src="/static/img/logo.svg" alt="logo icon">
+  
+  <script>
+    var links = document.getElementsByClassName("meta-tag");
+
+    for (let link of links) {
+    	var str = link.innerHTML;
+    	str = str.replace(/-/g, ' ');
+    	link.innerHTML = str;
+    }
+  </script>
 </footer>

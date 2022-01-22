@@ -17,7 +17,7 @@
 						{%- if tag != "post" -%}
 							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
 							<span class="tag">
-								<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+								<a href="{{ tagUrl | url }}" rel="tag" class="meta-tag">{{ tag }}</a>
 							</span>
 						{%- endif -%}
 					{% endfor %}
