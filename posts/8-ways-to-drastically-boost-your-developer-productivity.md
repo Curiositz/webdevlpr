@@ -2,12 +2,15 @@
 title: 8 Ways To Drastically Boost Your Developer Productivity
 date: 2022-01-09T20:31:42.452Z
 author: Marihanna Brandley
-summary: These eight productivity tips will supercharge your productivity as a developer. You’ll save hours of time which you can then invest in other activities.
+summary: These eight productivity tips will supercharge your productivity as a
+  developer. You’ll save hours of time which you can then invest in other
+  activities.
 tags:
   - post
   - css
   - productivity
   - development
+  - problem solving
 ---
 <!--StartFragment-->
 
