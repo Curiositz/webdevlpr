@@ -389,8 +389,9 @@ FRONT PAGE : POSTS
   display: inline;
 }
 
-.post-all-tags .tag {
- margin-left: 5px;
+/* Space between tags */
+.meta-tag {
+  margin-right: 10px;
 }
 
 /* Each tag typography and spacing */
@@ -463,10 +464,6 @@ ARTICLE
 
 .date-tags-separator {
   margin: 0 10px;
-}
-
-.meta-tag {
-  margin-right: 10px;
 }
 
 .meta-article .meta-tag:last-of-type {
