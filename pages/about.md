@@ -26,12 +26,12 @@ eleventyNavigation:
   <p>Dopada mi se ideja poznavanja full stack tehnologija, ali sam ovog trenutka fokusirana na <em>front end</em>
     put.</p>
   <div class="technologies-icons">
-    <img src="/static/img/html5.svg" alt="html5 logo">
-    <img src="/static/img/css3.svg" alt="css3 logo">
-    <img src="/static/img/js.svg" alt="javascript logo">
-    <img src="/static/img/git.svg" alt="git logo">
-    <img src="/static/img/figma.svg" alt="figma logo">
-    <img src="/static/img/react.svg" alt="react logo">
+    <i class="fab fa-html5 fa-3x"></i>
+    <i class="fab fa-css3-alt fa-3x"></i>
+    <i class="fab fa-js fa-3x"></i>
+    <i class="fab fa-github fa-3x"></i>
+    <i class="fab fa-figma fa-3x"></i>
+    <i class="fab fa-react fa-3x"></i>
   </div>
 </section>
 
@@ -42,9 +42,15 @@ eleventyNavigation:
     <h2>Kontakt</h2>
     <p><a href="mailto:marijana.sevo.tt@gmail.com">marijana.sevo.tt@gmail.com</a></p>
     <div class="social-icons">
-      <a href="https://github.com/Curiositz" target="_blank"><img src="/static/img/github.svg"
-          alt="github account"></a>
-      <a href="#" target="_blank"><img src="/static/img/instagram.svg" alt="instagram account"></a>
+      <a href="https://github.com/Curiositz" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
     </div>
   </div>
 </section>

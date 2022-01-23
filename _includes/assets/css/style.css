@@ -147,24 +147,58 @@ table {
   --em-font: Georgia, 'Times New Roman', Times, serif;
   --plain-font: Arial, 'Open Sans', sans-serif;
 
-  /* Colors */
-  --hot-pink: #ea4c89;
-  --light-pink: #ffe5ef;
-  --pastel-green: #D1E1DD;
+  /* Light colors */
+  --light-bg-color: #fff;
+  --light-text-color: #000;
+  --light-hot-pink: #ea4c89;
+  --light-about-pink: #ffe5ef;
+  --light-pastel-green: #D1E1DD;
+  /* Default colors assigned */
+  --bg-color: var(--light-bg-color);
+  --text-color: var(--light-text-color);
+  --hot-pink: var(--light-hot-pink);
+  --about-pink: var(--light-about-pink);
+  --pastel-green: var(--light-pastel-green);
+
 
   /* Other */
   --cb-transition: cubic-bezier(0.645,0.045,0.355,1);
+}
+
+/* dark mode
+***********/
+
+.darkmode {
+  /* Dark colors */
+  --dark-bg-color: #252525;
+  --dark-text-color: #ddd;
+  --dark-hot-pink: #874760;
+  --dark-about-pink: #2a2124;
+  --dark-pastel-green: #313b39;
+  /* Dark colors assigned */
+  --bg-color: var(--dark-bg-color);
+  --text-color: var(--dark-text-color);
+  --hot-pink: var(--dark-hot-pink);
+  --about-pink: var(--dark-bg-color);
+  --pastel-green: var(--dark-pastel-green);
 }
 
 ::selection {
   background-color: var(--pastel-green);
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
+body, a {
+  color: var(--text-color);
+}
+
 /* Default typography */
 body {
   font-family: var(--plain-font);
   font-size: 18px;
-  color: #000;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -200,7 +234,6 @@ a {
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: 0.2s;
-  color: #000;
   line-height: 1;
   text-decoration: none;
 }
@@ -316,6 +349,11 @@ MENU ALL
   font-family: var(--thin-font);
   text-transform: uppercase;
   display: inline-block;
+}
+
+/* Dark light mode button */
+.light-dark-button {
+  cursor: pointer;
 }
 
 
@@ -518,7 +556,7 @@ ARTICLE
 .tip {
   font-family: var(--em-font);
   font-style: italic;
-  border-left: #ea4c89 2px solid;
+  border-left: var(--hot-pink) 2px solid;
   padding-left: 15px;
 }
 
@@ -653,9 +691,9 @@ code.language-bash {
   bottom: 50px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid var(--pastel-green); /* Remove borders */
+  border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: var(--pastel-green); /* Set a background color */
+  background-color: var(--hot-pink); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 7px 15px; /* Some padding */
@@ -669,8 +707,7 @@ code.language-bash {
 }
 
 .back-button:hover, .back-button:focus {
-  background-color: var(--hot-pink);
-  border-color: var(--hot-pink);
+  background-color: var(--pastel-green);
 }
 
 /***********
@@ -679,7 +716,7 @@ code.language-bash {
 
 /* Light pink background color */
 [data-current=about-page] {
-  background-color: var(--light-pink);
+  background-color: var(--about-pink);
 }
 
 /* Title typography */
@@ -697,11 +734,7 @@ code.language-bash {
 }
 
 .contact a {
-  color: #4D4D4D;
   text-decoration: underline;
-}
-.contact a:hover {
-  color: #000000;
 }
 
 /* Social icons size */

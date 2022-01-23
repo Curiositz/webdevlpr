@@ -6,5 +6,8 @@
       <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
     </li>
   {%- endfor %}
+    <li class="light-dark-button">
+      <i class="fas fa-adjust adjust" id="dark-mode-toggle" aria-label="toggle dark mode"></i>
+    </li>
   </ul>
 </nav>
