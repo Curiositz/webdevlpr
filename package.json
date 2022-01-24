@@ -1,5 +1,5 @@
 {
-  "name": "shedevl-blog",
+  "name": "webdevlpr",
   "version": "1.0.3",
   "description": "A blog built as a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
