@@ -900,6 +900,7 @@ adding margin top to the first one */
     padding: 0 15px;
     margin-left: 15px;
     text-align: left;
+    font-size: 16px;
   }
 
   /* blockquote spanning 2 */
