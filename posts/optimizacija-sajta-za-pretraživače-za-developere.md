@@ -16,9 +16,11 @@ Osvrnuću se na neke standarde koji se mogu ispuniti direktno na sajtu, a koje G
 
 SEO ili optimizacija web stranice za internet pretraživače služi za <em>povećanje kvaliteta saobraćaja koji je usmjeren prema sajtu</em> preko prirodnih (organskih ili algoritamskih) rezultata pretrage.
 
+Značaj ove discipline govori i da visoko rangiranje na Google-u može vrijediti milione eura.
+
 <p class="tip right-tip" style="--span-row: 1;">Marketari i <em>SEO stručnjaci</em> se bave optimizacijom i povećanjem saobraćaja na web stranici. To uglavnom <em>nisu web developeri</em>. Zato su preskočene ili usputno pomenute mnoge teme.</p>
 
-## 1. Kvalitetan sadržaj 👑 
+## Kvalitetan sadržaj 👑 
 Jedna od loših metrika za SEO je ukoliko korisnik odmah nakon klika na link web stranice izgubi interesovanje da čita saržaj i vrati se na rezultate pretrage. Ovo se naziva <em>bounce rate</em> — stopa korisnika koji su posjetili sajt, ali nisu pronašli sadržaj koji ih zanima. 
 
 Zasićeni smo informacijama i svjetlucavim naslovima. Sve je teže manipulisati algoritmom pretraživača da bi se povećao saobraćaj na sajtu. Ono što korisnik prvo vidi treba ga navesti da želi čitati više. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj.
@@ -30,7 +32,7 @@ Korisno je mjeriti
 + <span>prosječan broj pregledanih stranica po sesiji (<em>number of pages viewed per session</em>)</span>
 
 
-## 2. Semantički ispravan HTML
+## Semantički ispravan HTML
 
-## 3. Brzo učitavanje sadržaja
+## Brzo učitavanje sadržaja
 
