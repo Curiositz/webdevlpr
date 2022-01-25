@@ -21,9 +21,9 @@ Marketari i <em>SEO stručnjaci</em> se bave optimizacijom i povećanjem saobra�
 ## 1. Kvalitetan sadržaj 👑 
 Jedna od loših metrika za SEO je ukoliko korisnik odmah nakon klika na link web stranice izgubi interesovanje da čita saržaj i vrati se na rezultate pretrage. Ovo se naziva <em>bounce rate</em> — stopa korisnika koji su posjetili sajt, ali nisu pronašli sadržaj koji ih zanima. 
 
-Zasićeni smo informacijama i svjetlucavim naslovima. Sve je teže manipulisati algoritmom pretraživača da bi se povećao saobraćaj na sajtu. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj. Ono što korisnik prvo vidi treba ga navesti da želi čitati više.
+Zasićeni smo informacijama i svjetlucavim naslovima. Sve je teže manipulisati algoritmom pretraživača da bi se povećao saobraćaj na sajtu. Ono što korisnik prvo vidi treba ga navesti da želi čitati više. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj.
 
-On će podsticati vrijeme zadržavanja korisnika na stranici (<em>dwell time</em>) koji je uticajniji od vjerovatnoće da će korisnik kliknuti link kada se sajt pojavi u rezultatima (<em>click-through rate</em> CTR).
+On će podsticati vrijeme zadržavanja korisnika na stranici (<em>dwell time</em>) koji je važniji od vjerovatnoće da će korisnik kliknuti link kada se sajt pojavi u rezultatima (<em>click-through rate</em> CTR).
 
 Korisno je mjeriti
 + <span>prosječno trajanje sesije (<em>session duration</em>)</span>
