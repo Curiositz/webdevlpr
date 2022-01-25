@@ -16,7 +16,7 @@ Osvrnuću se na neke standarde koji se mogu ispuniti direktno na sajtu, a koje G
 
 SEO ili optimizacija web stranice za internet pretraživače služi za <em>povećanje kvaliteta saobraćaja koji je usmjeren prema sajtu</em> preko prirodnih (organskih ili algoritamskih) rezultata pretrage.
 
-<p class="tip right-tip" style="--span-row: 2;">Marketari i <em>SEO stručnjaci</em> se bave optimizacijom i povećanjem saobraćaja na web stranici. To uglavnom <em>nisu web developeri</em>. Zato su preskočene ili usputno pomenute mnoge teme.</p>
+<p class="tip right-tip" style="--span-row: 2;">Marketari i <em>SEO stručnjaci</em> se bave optimizacijom sajta. To uglavnom <em>nisu web developeri</em>. Zato su preskočene ili usputno pomenute mnoge teme.</p>
 
 Značaj ove discipline govori i da visoko rangiranje na Google-u može vrijediti milione eura. Kako napraviti efektivniju web stranicu?
 
