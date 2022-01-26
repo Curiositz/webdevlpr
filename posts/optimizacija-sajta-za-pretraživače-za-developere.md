@@ -10,6 +10,7 @@ tags:
   - SEO
   - semantički HTML
 ---
+
 <!-- Osvrnuću se na neke standarde koji se mogu ispuniti direktno na sajtu, a koje Google odobrava kada je u pitanju SEO. Vodič za mene. -->
 
 SEO ili optimizacija web stranice za internet pretraživače služi za <em>povećanje kvaliteta saobraćaja koji je usmjeren prema sajtu</em> preko prirodnih (organskih ili algoritamskih) rezultata pretrage.
