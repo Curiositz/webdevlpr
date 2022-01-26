@@ -18,6 +18,7 @@ SEO ili optimizacija web stranice za internet pretraživače služi za <em>pove�
 
 Značaj ove discipline vidimo i u tome da visoko rangiranje na Google-u može vrijediti milione eura. Šta web stranicu čini efektivnom?
 
+
 ## Kvalitetan sadržaj ♛ 
 Jedna od loših metrika za SEO je ukoliko korisnik odmah po posjeti web stranice izgubi interesovanje da čita saržaj i vrati se na rezultate pretrage. Ovo se naziva <em>bounce rate</em> — stopa korisnika koji su posjetili sajt, ali nisu pronašli sadržaj koji ih zanima. 
 
