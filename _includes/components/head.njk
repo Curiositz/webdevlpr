@@ -5,23 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ renderData.title or title or metadata.title }} - webdevlpr</title>
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
-  {# Scripts #}
-  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% set js %}
-    {% include "assets/js/inline.js" %}
-  {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  
   {# Icons #}
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
   {# Fots #}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  
   {# Style #}
   <link href="/_includes/assets/css/prism.css" rel="stylesheet">
   <link rel="stylesheet" href="/_includes/assets/css/style.css"> 
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {# Global site tag (gtag.js) — Google Analytics #}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RTZ471EJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -29,6 +26,13 @@
     gtag('js', new Date());
 
     gtag('config', 'G-0RTZ471EJ8');
-  </script>
+  </script>  
+
+  {# Scripts #}
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% set js %}
+    {% include "assets/js/inline.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
 
 </head>
