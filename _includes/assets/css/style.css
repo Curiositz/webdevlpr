@@ -534,7 +534,7 @@ ARTICLE
   background-size: 100% 100%;
   background-image: linear-gradient(transparent 40%, var(--hot-pink) 40%, var(--hot-pink) 100%);
   transition: background-position 0.3s ease-in, text-decoration 1s ease;
-  background-position: 0 12px;
+  background-position: 0 14px;
   text-decoration: underline wavy var(--hot-pink) 2.2px;
 }
 
@@ -545,7 +545,7 @@ ARTICLE
 }
 
 /* Image: from side to side */
-.article figure {
+.article .wide-img {
   grid-column: 1 / -1;
   margin: 0 10px;
   max-width: 1000px;
