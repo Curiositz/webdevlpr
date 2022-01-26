@@ -20,9 +20,9 @@ Značaj ove discipline vidimo i u tome da visoko rangiranje na Google-u može vr
 Jedna od loših metrika za SEO je ukoliko korisnik odmah po posjeti web stranice izgubi interesovanje da čita saržaj i vrati se na rezultate pretrage. Ovo se naziva <em>bounce rate</em> — stopa korisnika koji su posjetili sajt, ali nisu pronašli sadržaj koji ih zanima. 
 
 Zasićeni smo nepotrebnim informacijama i svjetlucavim naslovima. Ono što korisnik prvo vidi treba ga navesti da želi pročitati više. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj.
-Takav sadržaj će podsticati vrijeme zadržavanja korisnika na stranici (<em>dwell time</em>) koji je važniji i od vjerovatnoće da će korisnik kliknuti link kada se sajt pojavi u rezultatima (<em>click-through rate</em> CTR).
+Takav sadržaj će podsticati vrijeme zadržavanja korisnika na stranici (<em>dwell time</em>) koji je važniji i od vjerovatnoće da će korisnik kliknuti link kada se sajt pojavi u rezultatima (<em>click-through rate</em> CTR). 
 
-Važne metrike
+Druge važne metrike:
 + <span>prosječno trajanje sesije (<em>session duration</em>)</span>
 + <span>prosječan broj pregledanih stranica po sesiji (<em>number of pages viewed per session</em>)</span>
 
@@ -30,6 +30,9 @@ Ove i druge podatke o saobraćaju na sajtu je moguće pratiti sa [Google Analiti
 
 
 ## Semantički ispravan HTML
+Semantički HTML je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je značenje stranice i njenog sadržaja. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
+
+![]() ![]()
 
 ## Brzo učitavanje sadržaja
 
