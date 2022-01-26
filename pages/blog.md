@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Blog
-metaDescription: A sample Blog page listing various posts and authors.
+metaDescription: Ovo je blog o web development-u.
 date: 2017-01-01
 permalink: /
 eleventyNavigation:
