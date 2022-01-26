@@ -1,17 +1,13 @@
 ---
-title: Optimizacija sajta za pretraživače - za developere
+title: Optimizacija sajta za pretraživače 
 date: 2022-01-25T19:33:53.977Z
 author: Marijana Sevo
-summary: SEO vodič za web developere za bolje rangiranje u rezultatima pretrage
-  i povećanje saobraćaja na sajtu. Preskočićemo razne teme za SEO stručnjake i
-  marketare.
+summary: SEO vodič za web developere. Tekst se osvrće na neke standarde koji se mogu ispuniti direktno na sajtu, a koje Google odobrava kada je u pitanju SEO. Fokus nisu teme za marketare.
 tags:
   - post
   - SEO
   - semantički HTML
 ---
-
-<!-- Osvrnuću se na neke standarde koji se mogu ispuniti direktno na sajtu, a koje Google odobrava kada je u pitanju SEO. Vodič za mene. -->
 
 SEO ili optimizacija web stranice za internet pretraživače služi za <em>povećanje kvaliteta saobraćaja koji je usmjeren prema sajtu</em> preko prirodnih (organskih ili algoritamskih) rezultata pretrage.
 
@@ -29,6 +25,8 @@ Takav sadržaj će podsticati vrijeme zadržavanja korisnika na stranici (<em>dw
 Važne metrike
 + <span>prosječno trajanje sesije (<em>session duration</em>)</span>
 + <span>prosječan broj pregledanih stranica po sesiji (<em>number of pages viewed per session</em>)</span>
+
+Ove i druge podatke o saobraćaju na sajtu je moguće pratiti sa [Google Analitikom](https://analytics.google.com/analytics/web/). 
 
 
 ## Semantički ispravan HTML
