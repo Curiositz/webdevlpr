@@ -6,7 +6,9 @@ summary: SEO vodič za web developere. Osvrt na standarde koji se mogu ispuniti 
 tags:
   - post
   - SEO
-  - semanticki-HTML
+  - semanticni-HTML
+  - socijalne-mreze
+  - pristupacnost
 thumbnail: /static/img/seo.jpg
 ---
 
@@ -43,7 +45,7 @@ Sajtovi koji mogu imati benefit od ovakvog dokumenta:
 
 #### Kako kreirati XML Sitemap-u?
 
-Najlakše je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisanu .xml datoteku.  Preuzetu datoteku treba smjestiti u glavni (root) direktorijum. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
+Moguće je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisanu .xml datoteku.  Preuzetu datoteku treba smjestiti u glavni (root) direktorijum. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
 
 ## Upotreba ispravnog HTML koda
 <em>Semantični HTML</em> je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je <em>značenje stranice i njenog sadržaja</em>. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
@@ -141,11 +143,11 @@ Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web st
 
 ## Brzo učitavanje sadržaja <i role="img" aria-label="JavaScript" title="JavaScript" class="fas fa-bolt"></i>
 
-Brzina učitavanja stranice igra još značajniji faktor rangiranja od kada su pametni telefoni preuzeli većinu saobraćaja na internetu. Oni mogu sporije učitavati sadržaj jer koriste mobilne podatke ili jer kod sajta nije ispravno prilagođen manjim ekranima. 
+Brzina učitavanja stranice igra još značajniji faktor u rangiranju od kada su pametni telefoni preuzeli većinu saobraćaja na internetu. Oni mogu sporije učitavati sadržaj jer koriste mobilne podatke ili jer kod sajta nije ispravno prilagođen manjim ekranima. 
 
-Brzina je samo još jedan od faktora kvalitetnog korisničkog iskustva i Google preporučuje da bi ovo vrijeme trebalo biti <em>ispod dvije sekunde</em>, ali da cilj treba biti ispod pola sekunde.
+Brzina je samo još jedan od faktora kvalitetnog korisničkog iskustva i Google preporučuje da ovo vrijeme bude <em>ispod dvije sekunde</em>, ali da cilj treba biti ispod pola sekunde.
 
-<p class="tip right-tip" style="--span-row: 1;">Može se testirati na: <a target=”_blank” href="http://developers.google.com/speed/pagespeed/insights">PageSpeed Insights</a>, <a target=”_blank” href="http://developers.google.com/web/tools/lighthouse">Lighthouse</a>, <a target=”_blank” href="http://gtmetrix.com/">GTmetrix</a>, <a target=”_blank” href="https://tools.pingdom.com/">Pingdom</a></p>
+<p class="tip right-tip" style="--span-row: 1;">Brzina se može testirati na: <a target=”_blank” href="http://developers.google.com/speed/pagespeed/insights">PageSpeed Insights</a>, <a target=”_blank” href="http://developers.google.com/web/tools/lighthouse">Lighthouse</a>, <a target=”_blank” href="http://gtmetrix.com/">GTmetrix</a>, <a target=”_blank” href="https://tools.pingdom.com/">Pingdom</a></p>
 
 
 ### Optimizacija koda
@@ -157,11 +159,35 @@ Brzina je samo još jedan od faktora kvalitetnog korisničkog iskustva i Google 
 + Skloniti JavaScript koji blokira učitavanje sadržaja (render blocking Javascript)
 + Izbjegavanje preusmjeravnja stranica
 
+### Smanjiti JavaScript koji blokira učitavanje sadržaja
+
+Prije nego pretraživač prikaže stranicu on mora napraviti DOM stablo rasčlanjivanjem HTML elemenata. Tokom procesa, kad god se pojavi skripta, pretraživač mora sačekati da se preuzme i izvrši, potom nastaviti kreiranje DOM stabla.
+
+Preporučuje se smanjiti upotrebu JavaScripta, posebno eksternih skripti koji se moraju preuzeti prije izvršavanja. One koje su neophodne je:
+
++ <span>Moguće staviti <i>inline</i> u sam dokument unutar `<script>` taga, ali ovaj saržaj treba biti kratak i brzo se izvršavati</span>
++ <span>Skripte koje nisu ključne za inicijalno prikazivanje bi trebale biti asinhrone (<i>asynchronoasius</i>) ili odložene (<i>deferred</i>)</span>
+
+``` html
+<script type="text/javascript">
+  /* ono što bi bio sadržaj manje JavaScript datoteke */
+</script>
+
+<script async src="my.js"></script>
+<!-- Skripta će biti preuzeta paralelno sa raščlanjivanjem stranice i izvršena čim bude dostupna -->
+<script defer src="my.js"></script>
+<!-- Skripta će biti preuzeta paralelno sa raščlanjivanjem stranice i izvršena nakon što stranica završi raščlanjivanje -->
+```
+
 ### Optimizacija slika
 
 + <span>Kompresija fotografija: <a target=”_blank” href="https://shortpixel.com/">Shortpixel</a>, <a target="_blank" href="https://imageresizer.com/">Image Resizer</a>, <a target="_blank" href="https://compressjpeg.com/">Compress JPEG</a></span>
 + Navođenje veličine fotografije kroz width i height
 + Primjena lijenog učitavanja (lazy loading)
 + <span>Korištenje `srcset` atributa za različite veličine ekrana</span>
+
+### Dodatni linkovi
+
+<a target="_blank" href="https://moz.com/learn/seo/seo-cheat-sheet">SEO Cheat Sheet za Web Developere</a>
 
 
