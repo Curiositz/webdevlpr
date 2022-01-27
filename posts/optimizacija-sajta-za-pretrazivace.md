@@ -6,7 +6,7 @@ summary: SEO vodič za web developere. Osvrt na standarde koji se mogu ispuniti 
 tags:
   - post
   - SEO
-  - semantički HTML
+  - semantički-HTML
 thumbnail: /static/img/seo.jpg
 ---
 
@@ -29,6 +29,19 @@ Druge važne metrike:
 
 Ove i druge podatke o saobraćaju na sajtu je moguće pratiti sa <a target=”_blank” href="https://analytics.google.com/analytics/web/">Google Analitikom</a>. 
 
+### XML Sitemap-a
+
+Botovi pretraživača posjećuju linkove i sadržaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se neće prikazivati u rezultatima pretrage. Sitemap-a pomaže pretraživačima, kao što je Google, da pronađe sve linkove i prepozna od kojih web stranica se sastoji sajt.
+
+Sajtovi koji mogu imati benefit od ovakvog dokumenta:
+
++ Sitemap ne može imati negativan uticaj — tako da svi?
++ Koji žele bolju vidljivost među pretraživačima
++ Sajt sa velikim brojem web stranica jer botovi pretraživača mogu propustiti linkove
++ Sajt koji ima web stranice koje nisu povezane u mrežu linkova
++ Novi sajt koji žele podići nivo optimizacije
+
+Najlakši način da se kreira ovaj dokument je generisati ga sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je samo kopirati link sajta.
 
 ## Upotreba ispravnog HTML koda
 <em>Semantični HTML</em> je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je <em>značenje stranice i njenog sadržaja</em>. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
