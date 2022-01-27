@@ -6,6 +6,17 @@
   <title>{{ renderData.title or title or metadata.title }} - webdevlpr</title>
   <meta name="description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
   <meta name="keywords" content="HTML, CSS, JavaScript, JS, Web Development, Developer">
+  {# rel="canonical"
+  If it has tags it's a post  
+  if it doesn't have tags, but has date it's a page  
+  if neither it's homepage #}
+  {% if tags %}
+  <link href="{{ metadata.url }}/posts/{{ title | slug }}" rel="canonical">
+  {% elif date %}
+  <link href="{{ metadata.url }}/{{ title | slug }}" rel="canonical">
+  {% else %}
+  <link href="{{ metadata.url }}" rel="canonical">
+  {% endif %}
 
   {# Icons #}
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
