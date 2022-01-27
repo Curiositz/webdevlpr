@@ -23,9 +23,16 @@
   <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
   <meta property="og:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
   <meta property="og:image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
-  {# <meta property="og:url" content="{{ title | slug | url | absoluteUrl(metadata.url) }}"> #}
+  
+  {% if tags %}
+  <meta property="og:url" content="{{ metadata.url }}/posts/{{ title | slug }}">
+  {% elif date %}
+  <meta property="og:url" content="{{ metadata.url }}/{{ title | slug }}">
+  {% else %}
+  <meta property="og:url" content="{{ metadata.url }}">
+  {% endif %}
   <meta property="og:site_name" content="webdevlpr">
-  {# <meta property="og:author" content="Marijana Sevo"> #}
+  {# <meta property="og:author" content="{{ author }}"> #}
 
   <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
   <meta name="twitter:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
