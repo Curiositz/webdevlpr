@@ -2,9 +2,7 @@
 title: Optimizacija sajta za pretraživače
 date: 2022-01-25T19:33:53.977Z
 author: Marijana Sevo
-summary: SEO vodič za web developere. Tekst se osvrće na neke standarde koji se
-  mogu ispuniti direktno na sajtu, a koje Google odobrava kada je u pitanju SEO.
-  Fokus nisu teme za marketare.
+summary: SEO vodič za web developere. Osvrt na standarde koji se mogu ispuniti direktno na sajtu, a koje Google odobrava. Fokus nisu teme za marketare.
 tags:
   - post
   - SEO

@@ -7,6 +7,7 @@ permalink: /about/index.html
 eleventyNavigation:
   key: Autor
   order: 2
+thumbnail: /static/img/logo-bg-square.png
 ---
 # Zdravo, ja sam Marijana.
 
