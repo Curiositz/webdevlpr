@@ -215,7 +215,7 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-em {
+em, strong, i {
   font-weight: bold;
   font-style: italic;
   font-family: var(--em-font);
@@ -530,7 +530,7 @@ ARTICLE
 
 /* Article links animation from below to top */
 
-.article p a {
+.article p a, .article ul a {
   background-size: 100% 100%;
   background-image: linear-gradient(transparent 40%, var(--hot-pink) 40%, var(--hot-pink) 100%);
   transition: background-position 0.3s ease-in, text-decoration 1s ease;
@@ -539,7 +539,9 @@ ARTICLE
 }
 
 .article p a:hover,
-.article p a:focus {
+.article p a:focus,
+.article ul a:hover,
+.article ul a:focus {
   background-position: 0 0;
   text-decoration: transparent;
 }
