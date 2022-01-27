@@ -1,5 +1,5 @@
 ---
-title: Optimizacija sajta za pretraživače
+title: Optimizacija sajta za pretrazivace
 date: 2022-01-25T19:33:53.977Z
 author: Marijana Sevo
 summary: SEO vodič za web developere. Tekst se osvrće na neke standarde koji se
