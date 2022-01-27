@@ -41,7 +41,9 @@ Sajtovi koji mogu imati benefit od ovakvog dokumenta:
 + Sajt koji ima web stranice koje nisu povezane u mrežu linkova
 + Novi sajt koji žele podići nivo optimizacije
 
-Najlakši način da se kreira ovaj dokument je generisati ga sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je samo kopirati link sajta.
+#### Kako kreirati XML Sitemap-u?
+
+Najlakše je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisanu .xml datoteku.  Preuzetu datoteku treba smjestiti u glavni (root) direktorijum. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
 
 ## Upotreba ispravnog HTML koda
 <em>Semantični HTML</em> je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je <em>značenje stranice i njenog sadržaja</em>. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
