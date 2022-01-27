@@ -1,5 +1,6 @@
 ---
 title: Optimizacija sajta za pretraživače
+permalink: /posts/{title | slug}/index.html
 date: 2022-01-25T19:33:53.977Z
 author: Marijana Sevo
 summary: SEO vodič za web developere. Tekst se osvrće na neke standarde koji se
