@@ -6,4 +6,5 @@ permalink: /
 eleventyNavigation:
   key: Blog
   order: 0
+thumbnail: /static/img/logo-bg-square.png
 ---

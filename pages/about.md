@@ -1,7 +1,7 @@
 ---
 layout: layouts/contact.njk
 title: Autor
-metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
+metaDescription: O autoru bloga.
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:

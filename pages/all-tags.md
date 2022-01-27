@@ -2,11 +2,13 @@
 section: tags-page
 layout: layouts/home.njk
 title: Tagovi
+metaDescription: Tagovi i kategorije za navigaciju.
 date: 2016-01-01T00:00:00.000Z
 permalink: /tag/index.html
 eleventyNavigation:
   key: tagovi
   order: 1
+thumbnail: /static/img/logo-bg-square.png
 ---
   <!-- <section class="tag-section">
     <h3 class="main-tag"><a href="tag.html">Koncept</a></h3>
