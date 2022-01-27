@@ -6,7 +6,7 @@ summary: SEO vodič za web developere. Osvrt na standarde koji se mogu ispuniti 
 tags:
   - post
   - SEO
-  - semantički-HTML
+  - semanticki-HTML
 thumbnail: /static/img/seo.jpg
 ---
 
