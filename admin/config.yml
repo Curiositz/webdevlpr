@@ -20,7 +20,7 @@ collections:
       - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image", choose_url: true, default: "/static/chocolate-dogecoin.jpg", media_folder: "static/img" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
