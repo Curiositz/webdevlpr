@@ -18,6 +18,21 @@
   <link href="{{ metadata.url }}" rel="canonical">
   {% endif %}
 
+  {# Open Graph and Twitter Cards #}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+  <meta property="og:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta property="og:image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
+  {# <meta property="og:url" content="{{ title | slug | url | absoluteUrl(metadata.url) }}"> #}
+  <meta property="og:site_name" content="webdevlpr">
+  {# <meta property="og:author" content="Marijana Sevo"> #}
+
+  <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
+  <meta name="twitter:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta name="twitter:image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
+  {# <meta name="twitter:site" content="@USERNAME">
+  <meta name="twitter:creator" content="@USERNAME"> #}
+
   {# Icons #}
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
