@@ -59,7 +59,7 @@ Meta elementi nisu vidljivi na stranici i služe da bi pretraživaču pružile <
 
 + <span>Element `<title>` se prikazuje kao naslov na stranici sa rezultatima i u tabu pretraživača kada je stranica otvorena.</span>
 + <span>Od `<meta name='description'>` ne ovisi da li će pretraživač ponuditi sajt kao rezultat, ali služi korisniku pri odabiru web stranice i utiče na stopu klikanja. Prikazuje se na stranici sa rezultatima.</span>
-+ <span>`rel="canonical"` govori pretraživaču koji link se indeksira kada postoje identične web stranice sa nekoliko različitih URL adresa poput: `https://www.example.com/` ili `https://example.com/index.html`</span>
++ <span>`rel="canonical"` govori pretraživaču koji link se indeksira kada postoji nekoliko različitih URL adresa koje vode ka istoj web stranici poput: `https://www.example.com/` ili `https://example.com/index.html`</span>
 
 Robots meta element govori pretraživačima da li da indeksiraju web stranicu:
 
@@ -82,18 +82,18 @@ Pretraživači ne mogu čitati slike koje čine ključni dio web stranica. Zato 
 <img alt="Opis fotografije" src="">
 ```
 
-Pretraživač će pratiti linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
+Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
 
 ``` html
 <a href="#" alt="nofollow"></a>
 ```
 
 + <span>Koristiti <em>nofollow</em> za linkove u koje nemamo povjerenja</span>
-+ <span><em>sponsored</em> za sponzorisane</span>
-+ <span><em>ugc</em> za one koje su generisali korisnici (user generated content)</span>
++ <span><em>Sponsored</em> za sponzorisane</span>
++ <span><em>Ugc</em> za one koje su generisali korisnici (user generated content)</span>
 
 
-## Brzo učitavanje sadržaja 🗲
+## Brzo učitavanje sadržaja <i role="img" aria-label="JavaScript" title="JavaScript" class="fas fa-bolt"></i>
 
 Brzina učitavanja stranice igra još značajniji faktor rangiranja od kada su pametni telefoni preuzeli većinu saobraćaja na internetu. Oni mogu sporije učitavati sadržaj jer koriste mobilne podatke ili jer kod sajta nije ispravno prilagođen manjim ekranima. 
 
