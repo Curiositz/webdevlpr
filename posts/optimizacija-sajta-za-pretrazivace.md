@@ -212,6 +212,8 @@ Koncept takvih meta podataka se može vidjeti u kodu ispod:
 </div>
 ```
 
+Schema atribut <a target="_blank" href="https://validator.schema.org/">validator</a>.
+
 ### Pristupačnost
 
 #### Responzivan i prilagođen dizajn
