@@ -22,7 +22,7 @@ Značaj ovog polja se vidi i u tome da visoko rangiranje na Google-u može vrije
 ## Kvalitetan sadržaj ♛ 
 Jedna od loših metrika za SEO je ukoliko korisnik odmah po posjeti web stranice izgubi interesovanje da čita saržaj i vrati se na rezultate pretrage. Ovo se naziva <i>bounce rate</i> — stopa korisnika koji su posjetili sajt, ali nisu pronašli sadržaj koji ih zanima. 
 
-Zasićeni smo nepotrebnim informacijama i svjetlucavim naslovima. Ono što korisnik prvo vidi treba ga navesti da želi pročitati više. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj.
+Zasićeni smo nepotrebnim informacijama i svjetlucavim naslovima, a ono što korisnik prvo vidi ga treba navesti da želi pročitati više. Najbolji adut za izbjegavanje visokog bounce rate je što kvalitetniji sadržaj.
 Takav sadržaj će podsticati vrijeme zadržavanja korisnika na stranici (<i>dwell time</i>) koji je važniji i od vjerovatnoće da će korisnik kliknuti link kada se sajt pojavi u rezultatima (<i>click-through rate</i> CTR). 
 
 Druge važne metrike:
@@ -33,23 +33,23 @@ Ove i druge podatke o saobraćaju na sajtu je moguće pratiti sa <a target=”_b
 
 ### XML Sitemap-a
 
-Botovi pretraživača posjećuju linkove i sadržaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se neće prikazivati u rezultatima pretrage. Sitemap-a pomaže pretraživačima, kao što je Google, da pronađu sve linkove i prepozna od kojih web stranica se sastoji sajt.
+Botovi pretraživača posjećuju linkove i sadržaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se neće prikazivati u rezultatima pretrage. Sitemap-a pomaže pretraživačima, kao što je Google, da pronađu sve linkove i prepoznaju koje web stranice sajt sadrži.
 
 Sajtovi koji mogu imati benefit od ovakvog dokumenta:
 
 + Sitemap ne može imati negativan uticaj — tako da svi?
 + Koji žele bolju vidljivost među pretraživačima
 + Sajt sa velikim brojem web stranica jer botovi pretraživača mogu propustiti linkove
-+ Sajt koji ima web stranice koje nisu povezane u mrežu linkova
++ Sajt koji ima web stranice, a koje nisu povezane u mrežu linkova
 + Novi sajt koji želi podići nivo optimizacije
 
 #### Kako kreirati XML Sitemap-u?
 
-Moguće je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisanu .xml datoteku.  Preuzetu datoteku treba smjestiti u glavni (root) direktorijum. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
+Moguće je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisani .xml fajl.  Preuzeti fajl treba smjestiti u glavni (root) folder:  `https://www.example.com/sitemap.xml`. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
 
 ### Robots.txt
 
-Pomoću dadoteke `robots.txt` je moguće kontrolisati kojim direktorijumima i datotekama koji botovi mogu pristupiti i koji sadržaj mogu indeksirati. `robots.txt` može sadržati jedno ili više pravila. Svako pravilo blokira ili dozvoljava pristup određenom botu pretraživača ka određenoj datoteci.
+Pomoću dadoteke `robots.txt` je moguće kontrolisati kojim folderima i fajlovima koji botovi mogu pristupiti i koji sadržaj mogu indeksirati. `robots.txt` može sadržati jedno ili više pravila. Svako pravilo blokira ili dozvoljava pristup određenom botu pretraživača ka određenoj datoteci.
 
 Osim ako je navedeno suprotno, implicitno je dozvoljeno indeksiranje cijelog sadržaja. U sledećem primjeru su postavljena dva pravila:
 
@@ -69,7 +69,7 @@ Allow: /
 Sitemap: http://www.example.com/sitemap.xml
 ```
 
-Datoteka se postavlja u glavni (root) direktorijum `https://www.example.com/robots.txt`. Više o <a target="_blank" href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt">robots.txt</a>.
+Fajl se postavlja u glavni (root) folder `https://www.example.com/robots.txt`. Više o <a target="_blank" href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt">robots.txt</a>.
 
 ## Upotreba ispravnog HTML koda
 <em>Semantični HTML</em> je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je <em>značenje stranice i njenog sadržaja</em>. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
@@ -161,11 +161,62 @@ Ovi meta tagovi omogućavaju sinhronizaciju i kontrolu prikaza web stranice pri 
 <meta name="twitter:creator" content="@username">
 ```
 
+### Atributi schema
+
+<a target="_blank" href="https://schema.org/">Schema.org</a> je projekat zajednice sa misijom da stvaraju, održavaju i promovišu <em>šeme za strukturirane podatake na internetu</em>. Diskutabilno je da li ovi atributi povećavaju rangiranje sajta pri pretraživanju nekog upita, ali oni omogućavaju definisanje dodatnih meta podataka o sadržaju na web stranici. Takvi podaci pomažu pretraživaču da interpretiraju sadržaj ispravno na stranici sa rezultatima pretraživanja (<i>search engine results page</i> SERP).
+
+Jedni od primjetnijih rezultata se prikazuju pri pretraživanju nekog proizvoda, usluge ili recepta.
+
+<figure>
+<img src="/static/img/scheme.JPG" alt="How Google interpets schema attributes for a recipe"> 
+ <figcaption>Google prikazuje ocjenjen recept u rezultatima</figcaption>
+</figure>
+
+
+Šeme su podjeljene u <a target="_blank" href="https://schema.org/docs/schemas.html">tipove</a>, a svaki tip je povezan sa skupom atributa. Neki od njih su za knjige, filmove, muziku, recepte, serije, zdravlje, organizaciju, osobu, mjesto, lokalni postao, restoran, proizvod, ponudu, recenziju itd.
+
+Koncept takvih meta podataka se može vidjeti u kodu ispod:
+
+``` html
+<div itemscope itemtype="https://schema.org/Recipe">
+  <span itemprop="name">Mom's Red Lentils</span>
+  By <span itemprop="author">John Smith</span>,
+  <meta itemprop="datePublished" content="2009-05-08">May 8, 2009
+  <img itemprop="image" src="bananabread.jpg"
+       alt="Banana bread on a plate">
+
+  <span itemprop="description">This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread.</span>
+
+  Prep Time: <meta itemprop="prepTime" content="PT15M">15 minutes
+  Cook time: <meta itemprop="cookTime" content="PT1H">1 hour
+  Yield: <span itemprop="recipeYield">1 loaf</span>
+  Tags: <link itemprop="suitableForDiet" href="https://schema.org/LowFatDiet">Low fat
+
+  <div itemprop="nutrition"
+    itemscope itemtype="https://schema.org/NutritionInformation">
+    Nutrition facts:
+    <span itemprop="calories">240 calories</span>,
+    <span itemprop="fatContent">9 grams fat</span>
+  </div>
+
+  Ingredients:
+  - <span itemprop="recipeIngredient">3 or 4 ripe bananas, smashed</span>
+  - <span itemprop="recipeIngredient">1 egg</span>
+  - <span itemprop="recipeIngredient">3/4 cup of sugar</span>
+
+  Instructions:
+  <span itemprop="recipeInstructions">
+  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add
+  the flour last. Pour the mixture into a loaf pan and bake for one hour.
+  </span>
+</div>
+```
+
 ### Pristupačnost
 
 #### Responzivan i prilagođen dizajn
 
-Prisustvo `<meta name="viewport" content="...">` linije ukazuje pretraživaču da je stranica prilagođena mobilnim uređajima i kako treba kontrolisati dimenzije i skaliranje stranice. Osim ove linije potrebno je definisati ponašanje stranice kroz CSS.
+Prisustvo `<meta name="viewport" content="...">` linije ukazuje pretraživaču da je stranica prilagođena mobilnim uređajima i kako treba kontrolisati dimenzije i skaliranje stranice. Ovim sajtovima se daje prednost, ali osim ove linije potrebno je definisati ponašanje stranice kroz CSS inače bi sadržaj mogao izgledati lošije sa ovom linijom.
 
 ``` html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -181,7 +232,7 @@ Pretraživači ne mogu čitati slike koje čine ključni dio web stranica. Zato 
 
 #### Linkovi i veze
 
-Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
+Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj i o čemu se na njoj radi. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
 
 ``` html
 <a href="#" alt="nofollow"></a>
