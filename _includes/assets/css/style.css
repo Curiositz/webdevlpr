@@ -215,6 +215,12 @@ h6 {
   letter-spacing: 0.02em;
 }
 
+h4, h5, h6 {
+  position: relative;
+  left: 15px;
+  font-style: italic;
+}
+
 em, strong, i {
   font-weight: bold;
   font-style: italic;
