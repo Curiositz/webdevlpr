@@ -235,7 +235,7 @@ Pretraživači ne mogu čitati slike koje čine ključni dio web stranica. Zato 
 Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj i o čemu se na njoj radi. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
 
 ``` html
-<a href="#" alt="nofollow"></a>
+<a href="#" rel="nofollow"></a>
 ```
 
 + <span>Koristiti <i>nofollow</i> za linkove u koje nemamo povjerenja</span>
