@@ -20,7 +20,7 @@ section: article-page
         {% for tag in tags %}
           {%- if tag != "post" -%}
             {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a itemprop="keywords" href="{{ tagUrl | url }}" rel="tag" class="meta-tag">{{ tag }}</a>
+            <a href="{{ tagUrl | url }}" rel="tag" class="meta-tag"><span itemprop="keywords">{{ tag }}</span></a>
           {%- endif -%}
         {% endfor %}{% endif %}
       </span>
