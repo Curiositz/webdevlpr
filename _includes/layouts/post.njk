@@ -9,8 +9,7 @@ section: article-page
 <article  class="article" itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
   <meta itemprop="datePublished" content="{{ page.date | machineDate }}">
   <meta itemprop="image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
-  <meta itemprop="author" content="{{ author }}">
-  <meta itemprop="publisher" content="webdevlpr.com">
+  <meta itemprop="description" content="{{ summary }}">
   <div class="article-info">
     <h1 itemprop="name headline">{{ title }}</h1>
     <div class="meta-article">
