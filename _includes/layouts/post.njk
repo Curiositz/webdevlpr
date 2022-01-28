@@ -10,6 +10,10 @@ section: article-page
   <meta itemprop="datePublished" content="{{ page.date | machineDate }}">
   <meta itemprop="image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
   <meta itemprop="description" content="{{ summary }}">
+  <meta itemprop="description" content="{{ author }}">
+  <span style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/WebPage">
+    <meta itemprop="name" content="webdevlpr.com">
+  </span>
   <div class="article-info">
     <h1 itemprop="name headline">{{ title }}</h1>
     <div class="meta-article">
