@@ -33,7 +33,7 @@ Ove i druge podatke o saobraćaju na sajtu je moguće pratiti sa <a target=”_b
 
 ### XML Sitemap-a
 
-Botovi pretraživača posjećuju linkove i sadržaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se neće prikazivati u rezultatima pretrage. Sitemap-a pomaže pretraživačima, kao što je Google, da pronađe sve linkove i prepozna od kojih web stranica se sastoji sajt.
+Botovi pretraživača posjećuju linkove i sadržaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se neće prikazivati u rezultatima pretrage. Sitemap-a pomaže pretraživačima, kao što je Google, da pronađu sve linkove i prepozna od kojih web stranica se sastoji sajt.
 
 Sajtovi koji mogu imati benefit od ovakvog dokumenta:
 
@@ -41,11 +41,35 @@ Sajtovi koji mogu imati benefit od ovakvog dokumenta:
 + Koji žele bolju vidljivost među pretraživačima
 + Sajt sa velikim brojem web stranica jer botovi pretraživača mogu propustiti linkove
 + Sajt koji ima web stranice koje nisu povezane u mrežu linkova
-+ Novi sajt koji žele podići nivo optimizacije
++ Novi sajt koji želi podići nivo optimizacije
 
 #### Kako kreirati XML Sitemap-u?
 
 Moguće je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com/">XML-Sitemaps</a>. Potrebno je kopirati link sajta i preuzeti generisanu .xml datoteku.  Preuzetu datoteku treba smjestiti u glavni (root) direktorijum. Potom registrovati XML Sitemap-u na <a href="https://www.google.com/webmasters/tools/home">Google Search konzoli</a>.
+
+### Robots.txt
+
+Pomoću dadoteke `robots.txt` je moguće kontrolisati kojim direktorijumima i datotekama koji botovi mogu pristupiti i koji sadržaj mogu indeksirati. `robots.txt` može sadržati jedno ili više pravila. Svako pravilo blokira ili dozvoljava pristup određenom botu pretraživača ka određenoj datoteci.
+
+Osim ako je navedeno suprotno, implicitno je dozvoljeno indeksiranje cijelog sadržaja. U sledećem primjeru su postavljena dva pravila:
+
+``` txt
+# Googlebot i AdsBot je dozvoljeno sve osim
+# http://example.com/nogb/
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Disallow: /nogb/
+
+# Svim drugim korisničkim agentima je dozvoljeno da indeksiraju 
+# cijeli sajt. Izostavljanje ovog pravila ima isti rezultat.
+User-agent: *
+Allow: /
+
+# Link do XML Sitemap-e
+Sitemap: http://www.example.com/sitemap.xml
+```
+
+Datoteka se postavlja u glavni (root) direktorijum `https://www.example.com/robots.txt`. Više o <a target="_blank" href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt">robots.txt</a>.
 
 ## Upotreba ispravnog HTML koda
 <em>Semantični HTML</em> je upotreba HTML elemenata koji jačaju semantiku i značenje informacija na web stranici. Semantički elementi jasno komuniciraju sa pretraživačom šta je <em>značenje stranice i njenog sadržaja</em>. Ta jasnoća osigurava da na upit pretraživači isporuče najbolje rezultate.
@@ -80,6 +104,21 @@ Meta elementi nisu vidljivi na stranici i služe da bi pretraživaču pružile <
 + <span>Od `<meta name='description'>` ne ovisi da li će pretraživač ponuditi sajt kao rezultat, ali služi korisniku pri odabiru web stranice i utiče na stopu klikanja. Prikazuje se na stranici sa rezultatima.</span>
 + <span>`rel="canonical"` govori pretraživaču koji link se indeksira kada postoji nekoliko različitih URL adresa koje vode ka istoj web stranici poput: `https://www.example.com/` ili `https://example.com/index.html`</span>
 
+### `data nosnippet` atribut
+
+Nekada pretraživač ignoriše opis koji je obezbjeđen kroz `<meta name="description" content="">` tag i umjesto njega postavi sadržaj sa stranice po svom nahođenju (algoritmu) po kom bi prikazani tekst možda više bio od pomoći korisnikovom upitu.
+
+Iako prikazani isječak nije faktor rangiranja, on utiče na korisnika da odabere određeni rezultat što dalje utiče na stopu klikanja (<i>click-through rate</i> CTR). Da bi spriječili Google da koristi određeni sadržaj kao isječak za opis moguće je koristiti `data nosnippet` atribut u sklopu `<span>`, `<div>` ili `<section>` taga.
+
+``` html
+<p>
+  Sadržaj u paragrafu može biti uključen u isječak
+  <span data-nosnippet>
+    ali ovaj dio ne bi bio prikazan.
+  </span>
+</p>
+```
+
 #### Robots meta
 
 Robots meta element govori pretraživačima da li da indeksiraju web stranicu:
@@ -97,7 +136,7 @@ Robots meta element govori pretraživačima da li da indeksiraju web stranicu:
 
 #### Meta socijalne mreže
 
-Ovi meta tagovi omogućavaju sinhronizaciju i kontrolu prikaza web stranice kada se dijeli na nekoj socijalnoj mreži.
+Ovi meta tagovi omogućavaju sinhronizaciju i kontrolu prikaza web stranice pri dijeljenju na nekoj socijalnoj mreži.
 
 <figure style="max-width: 450px;">
 <img src="/static/img/twitter-card.JPG" alt="How a website looks like when shared on Twitter"> 
@@ -124,11 +163,23 @@ Ovi meta tagovi omogućavaju sinhronizaciju i kontrolu prikaza web stranice kada
 
 ### Pristupačnost
 
+#### Responzivan i prilagođen dizajn
+
+Prisustvo `<meta name="viewport" content="...">` linije ukazuje pretraživaču da je stranica prilagođena mobilnim uređajima i kako treba kontrolisati dimenzije i skaliranje stranice. Osim ove linije potrebno je definisati ponašanje stranice kroz CSS.
+
+``` html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+#### Slike
+
 Pretraživači ne mogu čitati slike koje čine ključni dio web stranica. Zato slike koriste <em>alt</em> atribut za pristupačnost. U pretrazi za slikama pretraživač se vodi alternativnim tekstom.
 
 ``` html
 <img alt="Opis fotografije" src="">
 ```
+
+#### Linkovi i veze
 
 Pretraživač će pratiti izlazne linkove na sajtu da bi zaključio da li web stranica nudi kvalitetan sadržaj. Ako linkovi vode ka sajtovima sa kredibilitetom to je plus. Sa <em>rel</em> atributom je moguće naglasiti pretraživaču da ne treba pratiti određeni link. 
 
