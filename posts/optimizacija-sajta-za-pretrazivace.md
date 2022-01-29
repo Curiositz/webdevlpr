@@ -175,9 +175,9 @@ Jedni od primjetnijih primjena ovih atributa u rezultatima se vide pri pretraziv
 </figure>
 
 
-Seme su podjeljene u <a target="_blank" href="https://schema.org/docs/schemas.html">tipove</a>, a svaki tip je povezan sa skupom atributa. Neki od njih su za knjige, filmove, muziku, recepte, serije, zdravlje, organizaciju, osobu, mjesto, lokalni postao, restoran, proizvod, ponudu, recenziju itd.
+Seme su podjeljene u <a target="_blank" href="https://schema.org/docs/schemas.html">tipove</a>, a svaki tip je povezan sa skupom atributa. Neki od njih su za knjige, filmove, muziku, recepte, serije, zdravlje, organizaciju, osobu, mjesto, lokalni posao, restoran, proizvod, ponudu, recenziju itd.
 
-Koncept se moze vidjeti u kodu ispod:
+Koncept ovih meta podataka se moze vidjeti u kodu ispod:
 
 ``` html
 <div itemscope itemtype="https://schema.org/Recipe">
@@ -214,7 +214,7 @@ Koncept se moze vidjeti u kodu ispod:
 </div>
 ```
 
-Testirajte svoje strukturirane podatke u ovim <a target="_blank" href="https://developers.google.com/search/docs/advanced/structured-data">validatorima</a>.
+Strukturirani podaci se mogu testirati u ovim <a target="_blank" href="https://developers.google.com/search/docs/advanced/structured-data">validatorima</a>.
 
 ### Pristupacnost
 
