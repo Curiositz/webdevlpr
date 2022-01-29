@@ -6,9 +6,11 @@ summary: SEO vodic za web developere. Osvrt na standarde koji se mogu ispuniti d
 tags:
   - post
   - SEO
+  - HTML
   - semanticni-HTML
-  - socijalne-mreze
   - pristupacnost
+  - JavaScript
+  - socijalne-mreze
 thumbnail: /static/img/seo.jpg
 ---
 
@@ -16,7 +18,7 @@ SEO ili optimizacija web stranice za internet pretrazivace sluzi za <em>povecanj
 
 <p class="tip right-tip" style="--span-row: 2;">Marketari i <em>SEO strucnjaci</em> se bave optimizacijom web stranice. To uglavnom <em>nisu web developeri</em> i izostavljene su mnoge teme.</p>
 
-Znacaj ovog polja se vidi i u tome da visoko rangiranje na Google-u moze vrijediti milione eura. sta web stranicu cini efektivnom?
+Znacaj ovog polja se vidi i u tome da visoko rangiranje na Google-u moze vrijediti milione eura. Sta web stranicu cini efektivnom?
 
 
 ## Kvalitetan sadrzaj ♛ 
@@ -33,9 +35,9 @@ Ove i druge podatke o saobracaju na sajtu je moguce pratiti sa <a target=”_bla
 
 ### XML Sitemap-a
 
-Botovi pretrazivaca posjecuju linkove i sadrzaj na stranicama da bi indeksirao sajt. Ukoliko web stranice nisu indeksirane one se nece prikazivati u rezultatima pretrage. Sitemap-a pomaze pretrazivacima, kao sto je Google, da pronadju sve linkove i prepoznaju koje web stranice sajt sadrzi.
+Botovi pretrazivaca posjecuju linkove i sadrzaj na stranicama da bi se indeksirao sajt. Ukoliko web stranice nisu indeksirane one se nece prikazivati u rezultatima pretrage (<i>search engine results page</i> SERP). Sitemap-a pomaze pretrazivacima, kao sto je Google, da pronadju sve linkove i prepoznaju koje web stranice sajt sadrzi.
 
-Sajtovi koji mogu imati benefit od ovakvog dokumenta:
+Sajtovi koji mogu imati benefit od ovog fajla:
 
 + Sitemap ne moze imati negativan uticaj — tako da svi?
 + Koji zele bolju vidljivost medju pretrazivacima
@@ -49,7 +51,7 @@ Moguce je generisati je sa <a target="_blank" href="https://www.xml-sitemaps.com
 
 ### Robots.txt
 
-Pomocu dadoteke `robots.txt` je moguce kontrolisati kojim folderima i fajlovima koji botovi mogu pristupiti i koji sadrzaj mogu indeksirati. `robots.txt` moze sadrzati jedno ili vise pravila. Svako pravilo blokira ili dozvoljava pristup odredjenom botu pretrazivaca ka odredjenoj datoteci.
+Pomocu dadoteke `robots.txt` je moguce kontrolisati kojim folderima i fajlovima koji botovi mogu pristupiti i koji sadrzaj mogu indeksirati. `robots.txt` moze sadrzati jedno ili vise pravila. Svako pravilo blokira ili dozvoljava pristup odredjenom botu pretrazivaca ka odredjenoj web stranici.
 
 Osim ako je navedeno suprotno, implicitno je dozvoljeno indeksiranje cijelog sadrzaja. U sledecem primjeru su postavljena dva pravila:
 
@@ -72,7 +74,7 @@ Sitemap: http://www.example.com/sitemap.xml
 Fajl se postavlja u glavni (root) folder `https://www.example.com/robots.txt`. Vise o <a target="_blank" href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt">robots.txt</a>.
 
 ## Upotreba ispravnog HTML koda
-<em>Semanticni HTML</em> je upotreba HTML elemenata koji jacaju semantiku i znacenje informacija na web stranici. Semanticki elementi jasno komuniciraju sa pretrazivacom sta je <em>znacenje stranice i njenog sadrzaja</em>. Ta jasnoca osigurava da na upit pretrazivaci isporuce najbolje rezultate.
+<em>Semanticni HTML</em> je upotreba HTML elemenata koji jacaju semantiku i znacenje informacija na web stranici. Semanticni elementi jasno komuniciraju sa pretrazivacom sta je <em>znacenje stranice i njenog sadrzaja</em>. Ta jasnoca osigurava da na upit pretrazivaci isporuce najbolje rezultate.
 
 Nesemanticni tagovi poput `<div>` i `<span>` ne govore vise o sadrzaju. 
 
@@ -87,7 +89,7 @@ Neki od tagova o kojima se cesto govori su tagovi za naslove gdje najveci znacaj
 
 ### Meta podaci
 
-Meta elementi nisu vidljivi na stranici i sluze da bi pretrazivacu pruzile <em>vise informacija o web stranici</em>. Pretrazivac koristi ove podatke da bi shvatio o cemu je sajt, kada ga treba ponuditi kao rezultat i kako ga prezentovati na stranici sa rezultatima.
+Meta elementi nisu vidljivi na stranici i sluze da bi pretrazivacu pruzile <em>vise informacija o web stranici</em>. Pretrazivac koristi ove podatke da bi shvatio o cemu je sajt, kada ga treba ponuditi kao rezultat i kako ga prezentovati na stranici sa rezultatima (SERP).
 
 ``` html
 <head>
@@ -100,15 +102,15 @@ Meta elementi nisu vidljivi na stranici i sluze da bi pretrazivacu pruzile <em>v
 </head>
 ```
 
-+ <span>Element `<title>` se prikazuje kao naslov na stranici sa rezultatima i u tabu pretrazivaca kada je stranica otvorena.</span>
-+ <span>Od `<meta name='description'>` ne ovisi da li ce pretrazivac ponuditi sajt kao rezultat, ali sluzi korisniku pri odabiru web stranice i utice na stopu klikanja. Prikazuje se na stranici sa rezultatima.</span>
++ <span>Element `<title>` se prikazuje kao naslov na stranici sa rezultatima (SERP) i u tabu pretrazivaca kada je stranica otvorena.</span>
++ <span>Od `<meta name='description'>` ne ovisi da li ce pretrazivac ponuditi sajt kao rezultat, ali sluzi korisniku pri odabiru web stranice i utice na stopu klikanja (CTR). Prikazuje se na stranici sa rezultatima (SERP).</span>
 + <span>`rel="canonical"` govori pretrazivacu koji link se indeksira kada postoji nekoliko razlicitih URL adresa koje vode ka istoj web stranici poput: `https://www.example.com/` ili `https://example.com/index.html`</span>
 
 ### `data nosnippet` atribut
 
 Nekada pretrazivac ignorise opis koji je obezbjedjen kroz `<meta name="description" content="">` tag i umjesto njega postavi sadrzaj sa stranice po svom nahodjenju (algoritmu) po kom bi prikazani tekst mozda vise bio od pomoci korisnikovom upitu.
 
-Iako prikazani isjecak nije faktor rangiranja, on utice na korisnika da odabere odredjeni rezultat sto dalje utice na stopu klikanja (<i>click-through rate</i> CTR). Da bi sprijecili Google da koristi odredjeni sadrzaj kao isjecak za opis moguce je koristiti `data nosnippet` atribut u sklopu `<span>`, `<div>` ili `<section>` taga.
+Iako prikazani isjecak nije faktor rangiranja, on utice na korisnika da odabere odredjeni rezultat sto dalje utice na stopu klikanja (CTR). Da bi sprijecili Google da koristi odredjeni sadrzaj kao isjecak za opis moguce je koristiti `data nosnippet` atribut u sklopu `<span>`, `<div>` ili `<section>` taga.
 
 ``` html
 <p>
@@ -143,7 +145,7 @@ Ovi meta tagovi omogucavaju sinhronizaciju i kontrolu prikaza web stranice pri d
  <figcaption>Kako izgleda web stranica kada se podijeli na Twitteru</figcaption>
 </figure>
 
-<em>Open graph</em> meta tagovi integrisu web stranicu sa raznim mrezama poput Facebook, LinkedIn, Discord. <em>Twitter</em> ima vrijednosti koje funkcionisu na identican nacin. Izgled se moze provjeriti na sajtovima poput: <a target=”_blank” href="https://cards-dev.twitter.com/validator">Twitterov validator kartica</a> i druge mreze se mogu provjeriti na <a target=”_blank” href="https://www.opengraph.xyz/">Open Graph</a> 
+<em>Open graph</em> meta tagovi integrisu web stranicu sa raznim mrezama poput Facebook, LinkedIn, Discord itd. <em>Twitter</em> ima vrijednosti koje funkcionisu na identican nacin. Izgled se moze provjeriti na sajtovima poput: <a target=”_blank” href="https://cards-dev.twitter.com/validator">Twitterov validator kartica</a> a neke druge mreze se mogu provjeriti na <a target=”_blank” href="https://www.opengraph.xyz/">Open Graph</a> 
 
 ``` html
 <!-- OG ili Open graph-->
@@ -163,9 +165,9 @@ Ovi meta tagovi omogucavaju sinhronizaciju i kontrolu prikaza web stranice pri d
 
 ### Atributi schema
 
-<a target="_blank" href="https://schema.org/">Schema.org</a> je projekat zajednice sa misijom da stvaraju, odrzavaju i promovisu <em>seme za strukturirane podatake na internetu</em>. Diskutabilno je da li ovi atributi povecavaju rangiranje sajta pri pretrazivanju nekog upita, ali oni omogucavaju definisanje dodatnih meta podataka o sadrzaju na web stranici. Takvi podaci pomazu pretrazivacu da interpretiraju sadrzaj ispravno na stranici sa rezultatima pretrazivanja (<i>search engine results page</i> SERP).
+<a target="_blank" href="https://schema.org/">Schema.org</a> je projekat zajednice sa misijom da stvaraju, odrzavaju i promovisu <em>seme za strukturirane podatake na internetu</em>. Diskutabilno je da li ovi atributi povecavaju rangiranje sajta pri pretrazivanju nekog upita, ali oni omogucavaju definisanje dodatnih meta podataka o sadrzaju na web stranici. Takvi podaci pomazu pretrazivacu da interpretiraju sadrzaj ispravno na stranici sa rezultatima pretrazivanja (SERP).
 
-Jedni od primjetnijih rezultata se prikazuju pri pretrazivanju nekog proizvoda, usluge ili recepta.
+Jedni od primjetnijih primjena ovih atributa u rezultatima se vide pri pretrazivanju nekog proizvoda, usluge ili recepta koji je ocijenjen.
 
 <figure>
 <img src="/static/img/scheme.JPG" alt="How Google interpets schema attributes for a recipe"> 
@@ -173,9 +175,9 @@ Jedni od primjetnijih rezultata se prikazuju pri pretrazivanju nekog proizvoda, 
 </figure>
 
 
-seme su podjeljene u <a target="_blank" href="https://schema.org/docs/schemas.html">tipove</a>, a svaki tip je povezan sa skupom atributa. Neki od njih su za knjige, filmove, muziku, recepte, serije, zdravlje, organizaciju, osobu, mjesto, lokalni postao, restoran, proizvod, ponudu, recenziju itd.
+Seme su podjeljene u <a target="_blank" href="https://schema.org/docs/schemas.html">tipove</a>, a svaki tip je povezan sa skupom atributa. Neki od njih su za knjige, filmove, muziku, recepte, serije, zdravlje, organizaciju, osobu, mjesto, lokalni postao, restoran, proizvod, ponudu, recenziju itd.
 
-Koncept takvih meta podataka se moze vidjeti u kodu ispod:
+Koncept se moze vidjeti u kodu ispod:
 
 ``` html
 <div itemscope itemtype="https://schema.org/Recipe">
@@ -212,7 +214,7 @@ Koncept takvih meta podataka se moze vidjeti u kodu ispod:
 </div>
 ```
 
-Schema atribut <a target="_blank" href="https://validator.schema.org/">validator</a>.
+Testirajte svoje strukturirane podatke u ovim <a target="_blank" href="https://developers.google.com/search/docs/advanced/structured-data">validatorima</a>.
 
 ### Pristupacnost
 
