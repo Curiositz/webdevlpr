@@ -38,17 +38,17 @@ thumbnail: /static/img/logo-bg-square.png
 <section class="contact">
   <div class="contact-info">
     <h2>Kontakt</h2>
-    <p><a href="mailto:marijana.sevo.tt@gmail.com">marijana.sevo.tt@gmail.com</a></p>
+    <p><a href="mailto:marijana@webdevlpr.com">marijana@webdevlpr.com</a></p>
     <div class="social-icons">
       <a href="https://github.com/Curiositz" target="_blank">
         <i role="img" aria-label="Github" class="fab fa-github"></i>
       </a>
-      <!-- <a href="#" target="_blank">
+      <!-- <a href="https://www.instagram.com/webdevlprr/" target="_blank">
         <i role="img" aria-label="Instagram" class="fab fa-instagram"></i>
-      </a>
-      <a href="#" target="_blank">
-        <i role="img" aria-label="Twitter" class="fab fa-twitter-square"></i>
       </a> -->
+      <a href="https://twitter.com/webdevlpr" target="_blank">
+        <i role="img" aria-label="Twitter" class="fab fa-twitter-square"></i>
+      </a>
     </div>
   </div>
 </section>
