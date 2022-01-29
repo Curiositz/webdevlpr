@@ -1,31 +1,152 @@
 ---
 layout: layouts/base.njk
-section: post
+section: article-page
 ---
+<div class="progress-container">
+  <div class="progress-bar" id="progBar"></div>
+</div>
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
-    </small>
-  </p>
+<article  class="article" itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
+  <meta itemprop="datePublished" content="{{ page.date | machineDate }}">
+  <meta itemprop="image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
+  <meta itemprop="description" content="{{ summary }}">
+  <span style="display: none;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{{ author }}">
+  </span>
+  <span style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/WebPage">
+    <meta itemprop="name" content="webdevlpr.com">
+  </span>
+  <div class="article-info">
+    <h1 itemprop="name headline">{{ title }}</h1>
+    <div class="meta-article">
+      <span class="meta-date">
+        <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
+      </span>
+      <span class="meta-tags"><span class="date-tags-separator">—</span>{% if tags %}
+        {% for tag in tags %}
+          {%- if tag != "post" -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag" class="meta-tag"><span itemprop="keywords">{{ tag }}</span></a>
+          {%- endif -%}
+        {% endfor %}{% endif %}
+      </span>
+    </div>
+  </div>
+
+  
+  {# Author by #}
+  {# <p><small>by <a href="/authors/{{ author | slug }}/">{{ author }}</a></small></p> #}
 
   {{ layoutContent | safe }}
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
+  <nav>
+    <a href="{{ '/' | url }}">← Blog index</a>
+  </nav>
 
 </article>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+<button onclick="topFunction()" class="back-button" title="Go to top"><img src="/static/img/arrow-up.svg"></button>
+
+<script>
+// COPY TO CLIPBOARD FEATURE
+// https://spdevuk.com/how-to-create-code-copy-button/ 
+const copyToClipboard = str => {
+  const el = document.createElement('textarea'); // Create a <textarea> element
+  el.value = str; // Set its value to the string that you want copied
+  el.setAttribute('readonly', ''); // Make it readonly to be tamper-proof
+  el.style.position = 'absolute';
+  el.style.left = '-9999px'; // Move outside the screen to make it invisible
+  document.body.appendChild(el); // Append the <textarea> element to the HTML document
+  const selected =
+    document.getSelection().rangeCount > 0 // Check if there is any content selected previously
+      ? document.getSelection().getRangeAt(0) // Store selection if found
+      : false; // Mark as false to know no selection existed before
+  el.select(); // Select the <textarea> content
+  document.execCommand('copy'); // Copy - only works as a result of a user action (e.g. click events)
+  document.body.removeChild(el); // Remove the <textarea> element
+  if (selected) {
+    // If a selection existed before copying
+    document.getSelection().removeAllRanges(); // Unselect everything on the HTML document
+    document.getSelection().addRange(selected); // Restore the original selection
+  }
+};
+
+function handleCopyClick(evt) {
+  // get the children of the grandParent element
+  const { children } = evt.target.parentElement.parentElement;
+  // grab the first element (we append the copy button on afterwards, so the first will be the code element)
+  // destructure the innerText from the code block
+  const { innerText } = Array.from(children)[0];
+
+  // copy all of the code to the clipboard
+  copyToClipboard(innerText);
+  // alert to show it worked, but you can put any kind of tooltip/popup
+  // alert(innerText);
+
+  // Create div success message
+  const body = document.querySelector('body');
+  const success = document.createElement('div');
+  success.className = "success";
+  body.append(success);
+  success.innerHTML = "Kopirano!";
+  
+  // close the div success message by adding and removing 'show' class in 1.5 secs
+  // https://stackify.dev/960934-add-then-remove-class-after-delay-but-without-page-refresh
+  success.classList.add('show');
+
+  window.setTimeout(function () {
+    success.classList.remove('show');
+  }, 1500);
+
+}
+
+// get the list of all highlight code blocks
+const highlights = document.querySelectorAll('pre');
+// add the copy button to each code block
+highlights.forEach(pre => {
+
+  // Creating div parent to contain hr as separator and button
+  const parentDiv = document.createElement('div');
+  parentDiv.className = "copy-section";
+  const hr = document.createElement('hr');
+  // create the copy button
+  const copy = document.createElement('button');
+  const message = document.createElement('span.message');
+  copy.innerHTML = '<img alt="Copy code button" src="/static/img/copy.svg">';
+  // add the event listener to each click
+  copy.addEventListener('click', handleCopyClick);
+  // append the copy button to each code block
+  pre.append(parentDiv);
+  parentDiv.append(hr, copy);
+});
+
+
+// BACK TO TOP FEATURE & PROGRESS READING INDICATOR
+// Get the button:
+toTopBtn = document.querySelector(".back-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toTopBtn.style.display = "block";
+  } else {
+    toTopBtn.style.display = "none";
+  }
+
+  // Progress reading indicator
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progBar").style.width = scrolled + "%";
+  // Progress reading indicator
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>

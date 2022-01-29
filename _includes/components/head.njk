@@ -2,15 +2,72 @@
   <meta charset="utf-8">
   <link rel="dns-prefetch" href="https://identity.netlify.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ renderData.title or title or metadata.title }}</title>
-  <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ renderData.title or title or metadata.title }} - webdevlpr</title>
+  <meta name="description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta name="keywords" content="HTML, CSS, JavaScript, JS, Web Development, Developer">
+  <meta name=”robots” content=”index,follow”>
+  {# rel="canonical"
+  If it has tags it's a post  
+  if it doesn't have tags, but has date it's a page  
+  if neither it's homepage #}
+  {% if tags %}
+  <link href="{{ metadata.url }}/posts/{{ title | slug }}" rel="canonical">
+  {% elif date %}
+  <link href="{{ metadata.url }}/{{ title | slug }}" rel="canonical">
+  {% else %}
+  <link href="{{ metadata.url }}" rel="canonical">
+  {% endif %}
+
+  {# Open Graph and Twitter Cards #}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+  <meta property="og:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta property="og:image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
+  
+  {% if tags %}
+  <meta property="og:url" content="{{ metadata.url }}/posts/{{ title | slug }}">
+  {% elif date %}
+  <meta property="og:url" content="{{ metadata.url }}/{{ title | slug }}">
+  {% else %}
+  <meta property="og:url" content="{{ metadata.url }}">
+  {% endif %}
+  <meta property="og:site_name" content="webdevlpr">
+  <meta property="og:author" content="{{ author }}">
+
+  <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
+  <meta name="twitter:description" content="{{ summary or metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta name="twitter:image" content="{{ thumbnail | url | absoluteUrl(metadata.url) }}">
+  {# <meta name="twitter:site" content="@USERNAME">
+  <meta name="twitter:creator" content="@USERNAME"> #}
+
+  {# Icons #}
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  {# Fots #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  
+  {# Style #}
+  <link href="/_includes/assets/css/prism.css" rel="stylesheet">
+  <link rel="stylesheet" href="/_includes/assets/css/style.css"> 
+
+  {# Global site tag (gtag.js) — Google Analytics #}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RTZ471EJ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RTZ471EJ8');
+  </script>
+
+  {# Scripts #}
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% set css %}
-    {% include "assets/css/inline.css" %}
-  {% endset %}
-  <style>{{ css | cssmin | safe }}</style>
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+
 </head>

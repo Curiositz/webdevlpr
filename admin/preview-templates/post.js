@@ -9,38 +9,40 @@ const Post = createClass({
     const entry = this.props.entry;
 
     return html`
-      <main>
-        <article>
+      <article class="article">
+        <div class="article-info">
           <h1>${entry.getIn(["data", "title"], null)}</h1>
-          <p>
-            <small>
-              <time
-                >${
-                  format(
-                    entry.getIn(["data", "date"], new Date()),
-                    "dd MMM, yyyy"
-                  )
-                }</time
-              >
-              ${" by Author"}
-            </small>
-          </p>
+          <div class="meta-article">
+            <span class="meta-date">
+              <time>${
+                format(
+                  entry.getIn(["data", "date"], new Date()),
+                  "d/L/yyyy"
+                )
+              }</time>
+            </span>
+            <span class="meta-tags"><span class="date-tags-separator">—</span>
+              ${
+                entry.getIn(["data", "tags"], []).map(
+                  tag =>
+                    html`
+                      <a href="#" class="meta-tag" rel="tag">${tag}</a>
+                    `
+                )
+              }
+            </span>
+          </div>
+        </div>
 
-          <p>${entry.getIn(["data", "summary"], "")}</p>
+        <p>${entry.getIn(["data", "summary"], "")}</p>
 
-          ${this.props.widgetFor("body")}
-          <p>
-            ${
-              entry.getIn(["data", "tags"], []).map(
-                tag =>
-                  html`
-                    <a href="#" rel="tag">${tag}</a>
-                  `
-              )
-            }
-          </p>
-        </article>
-      </main>
+        ${this.props.widgetFor("body")}
+
+        <nav>
+          <a href="#">← Blog index</a>
+        </nav>
+          
+      </article>
     `;
   }
 });

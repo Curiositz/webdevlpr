@@ -2,12 +2,24 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
+
+// 11ty plugins
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  // Eleventy Syntax highlighying plugin  
+  // https://www.11ty.dev/docs/plugins/syntaxhighlight/
+  eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Eleventy RSS plugin
+  // https://www.11ty.dev/docs/plugins/rss/
+  eleventyConfig.addPlugin(pluginRss);
 
   // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
   // layout aliases! Say you have a bunch of existing content using
@@ -22,24 +34,39 @@ module.exports = function(eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", collection => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
-    return blogs.reduce((coll, post) => {
-      const author = post.data.author;
-      if (!author) {
-        return coll;
-      }
-      if (!coll.hasOwnProperty(author)) {
-        coll[author] = [];
-      }
-      coll[author].push(post.data);
-      return coll;
-    }, {});
-  });
+  // eleventyConfig.addCollection("authors", collection => {
+  //   const blogs = collection.getFilteredByGlob("posts/*.md");
+  //   return blogs.reduce((coll, post) => {
+  //     const author = post.data.author;
+  //     if (!author) {
+  //       return coll;
+  //     }
+  //     if (!coll.hasOwnProperty(author)) {
+  //       coll[author] = [];
+  //     }
+  //     coll[author].push(post.data);
+  //     return coll;
+  //   }, {});
+  // });
+
+  // Date formatting (human readable)
+  // eleventyConfig.addFilter("readableDate", dateObj => {
+  //   return DateTime.fromJSDate(dateObj).toFormat("d LLL yyyy");
+  // });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj).toFormat("d/L/yyyy");
+  });
+
+  // Date formatting (human readable Day)
+  eleventyConfig.addFilter("readableDateDay", dateObj => {
+    return DateTime.fromJSDate(dateObj).toFormat("d");
+  });
+
+  // Date formatting (human readable Month)
+  eleventyConfig.addFilter("readableDateMonth", dateObj => {
+    return DateTime.fromJSDate(dateObj).toFormat("LLL");
   });
 
   // Date formatting (machine readable)
@@ -79,7 +106,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
+  eleventyConfig.addPassthroughCopy("_includes/assets");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");

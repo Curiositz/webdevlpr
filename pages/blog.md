@@ -1,10 +1,10 @@
 ---
 layout: layouts/blog.njk
 title: Blog
-metaDescription: A sample Blog page listing various posts and authors.
-date: 2017-01-01
-permalink: /blog/index.html
+metaDescription: Ovo je blog o web development-u.
+permalink: /
 eleventyNavigation:
   key: Blog
-  order: 2
+  order: 0
+thumbnail: /static/img/logo-bg-square.png
 ---
