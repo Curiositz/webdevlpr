@@ -12,9 +12,9 @@
   if it doesn't have tags, but has date it's a page  
   if neither it's homepage #}
   {% if tags %}
-  <link href="{{ metadata.url }}/posts/{{ title | slug }}" rel="canonical">
+  <link href="{{ metadata.url }}/posts/{{ title | slug }}/" rel="canonical">
   {% elif date %}
-  <link href="{{ metadata.url }}/{{ title | slug }}" rel="canonical">
+  <link href="{{ metadata.url }}/{{ title | slug }}/" rel="canonical">
   {% else %}
   <link href="{{ metadata.url }}" rel="canonical">
   {% endif %}
