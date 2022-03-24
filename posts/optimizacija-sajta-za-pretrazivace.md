@@ -287,7 +287,7 @@ Preporucuje se smanjiti upotrebu JavaScripta, posebno eksternih skripti koji se 
 
 ### Optimizacija slika
 
-+ <span>Kompresija fotografija: <a target=”_blank” href="https://shortpixel.com/">Shortpixel</a>, <a target="_blank" href="https://imageresizer.com/">Image Resizer</a>, <a target="_blank" href="https://compressjpeg.com/">Compress JPEG</a></span>
++ <span><i>Kompresija fotografija</i>: <a target=”_blank” href="https://shortpixel.com/">Shortpixel</a>, <a target="_blank" href="https://imageresizer.com/">Image Resizer</a>, <a target="_blank" href="https://compressjpeg.com/">Compress JPEG</a></span>
 + Navodjenje velicine fotografije kroz width i height
 + Primjena lijenog ucitavanja (lazy loading)
 + <span>Koristenje `srcset` atributa za razlicite velicine ekrana</span>
