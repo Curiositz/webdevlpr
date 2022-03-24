@@ -14,7 +14,7 @@ thumbnail: /static/img/logo-bg-square.png
 <section class="main-about">
   <p>Ovdje mozes citati neke <em>biljeske</em> vezane za razvoj web-a koje pravim u procesu ucenja.</p>
   <br>
-  <p>Internet je dostupan mnogima i njegov potencijal za prenosenje ideja, rjesavanje problema, izrazavanje i komunikaciju je skoro beskonacan. Zato je <em>web development</em> tema bloga. Takodje i da bih dijelila nauceno, koristila biljeske kao referencu i upoznala kolege.</p>
+  <p>Internet je dostupan mnogima i njegov potencijal za prenosenje ideja, rjesavanje problema, izrazavanje i komunikaciju je skoro beskonacan. Zato je <em>web development</em> tema bloga. Takodje i da bih koristila postove kao referencu, dijelila nauceno, pomogla nekome ko zeli da uci i mozda upoznala nove ljude koje zanima ova oblast.</p>
   <br>
   <p>2021. godine sam zavrsila smijer inzenjerstvo informacionih tehnologija u Banja Luci.</p>
 </section>
