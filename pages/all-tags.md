@@ -10,14 +10,16 @@ eleventyNavigation:
   order: 1
 thumbnail: /static/img/logo-bg-square.png
 ---
-  <!-- <section class="tag-section">
-    <h3 class="main-tag"><a href="tag.html">Koncept</a></h3>
-    <span class="tag"><a href="#">Rjesavanje problema</a></span>
+  <section class="tag-section">
+    <h3 class="main-tag"><a href="/tags/koncept/">Koncept</a></h3>
+    <span class="tag"><a href="/tags/ucenje/">Ucenje</a></span>
+    <span class="tag"><a href="/tags/teorija/">Teorija</a></span>
+    <!--<span class="tag"><a href="#">Rjesavanje problema</a></span>
     <span class="tag"><a href="#">Pretrazivanje / Google</a></span>
     <span class="tag"><a href="#">Programersko razmisljanje</a></span>
     <span class="tag"><a href="#">Browser support</a></span>
-    <span class="tag"><a href="#">Biblioteka / framework</a></span>
-  </section> -->
+    <span class="tag"><a href="#">Biblioteka / framework</a></span> -->
+  </section>
   
   <!-- <section class="tag-section">
     <h3 class="main-tag"><a href="#">Flow</a></h3>
@@ -31,11 +33,11 @@ thumbnail: /static/img/logo-bg-square.png
   </section> -->
   
   <section class="tag-section">
-    <h3 class="main-tag"><a href="https://webdevlpr.com/tags/HTML/">HTML</a></h3>
+    <h3 class="main-tag"><a href="/tags/HTML/">HTML</a></h3>
     <!-- <span class="tag"><a href="#">Markdown</a></span> -->
     <!-- <span class="tag"><a href="#">HTML styleguide</a></span> -->
-    <span class="tag"><a href="https://webdevlpr.com/tags/semanticni-HTML/">Semanticni HTML</a></span>
-    <span class="tag"><a href="https://webdevlpr.com/tags/pristupacnost/">Pristupacnost</a></span>
+    <span class="tag"><a href="/tags/semanticni-HTML/">Semanticni HTML</a></span>
+    <span class="tag"><a href="/tags/pristupacnost/">Pristupacnost</a></span>
     <!-- <span class="tag"><a href="#">EMMET</a></span> -->
     <!-- <span class="tag"><a href="#">Boilerplate</a></span> -->
     <!-- <span class="tag"><a href="#">HTML SVG</a></span> -->
@@ -63,7 +65,7 @@ thumbnail: /static/img/logo-bg-square.png
   </section> -->
   
  <section class="tag-section">
-    <h3 class="main-tag"><a href="https://webdevlpr.com/tags/JavaScript/">JavaScript</a></h3>
+    <h3 class="main-tag"><a href="/tags/JavaScript/">JavaScript</a></h3>
     <!-- <span class="tag"><a href="#">Objekat</a></span>
     <span class="tag"><a href="#">Array</a></span> -->
   </section>
@@ -79,11 +81,11 @@ thumbnail: /static/img/logo-bg-square.png
   </section> -->
 
   <section class="tag-section">
-    <h3 class="main-tag"><a href="https://webdevlpr.com/tags/SEO/">SEO</a></h3>
+    <h3 class="main-tag"><a href="/tags/SEO/">SEO</a></h3>
   </section>
 
   <section class="tag-section">
-    <h3 class="main-tag"><a href="https://webdevlpr.com/tags/socijalne-mreze/">Socijalne mreze</a></h3>
+    <h3 class="main-tag"><a href="/tags/socijalne-mreze/">Socijalne mreze</a></h3>
   </section>
 
 <!--  <section class="tag-section">
