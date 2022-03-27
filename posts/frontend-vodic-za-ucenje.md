@@ -166,7 +166,7 @@ Znam da se tekst oduzio, ali se priblizava konkretnom dijelu gdje ceka najvise p
 + <span>Obratite paznju na svoj zivotni stil i kako on utice na nivo energije. <em>Primjeniti zdravije navike i nacin zivota moze ucenje uciniti znacajno optimalnijim</em> ali i popraviti kvalitet zivota. Obratite paznju na ishranu, fizicku aktivnost, spavanje, redovne pauze i vrijeme za sebe.</span><!-- TODO:[]: Potencijalna tema https://youtu.be/mw0LGzIKvoo?t=591 -->
 + <span>Lako je izgubiti se u tutorijalima i prelaziti sa teme na temu. Umjesto prelazenja svakog izvora po malo i prebacivanje na drugi ispocetka, <em>izabrati medij i ispratiti ga do kraja</em>. Ovako je jednostavnije izbjeci razvodnjenu paznju, duze zadrzati fokus i brze organizovano preci osnove. U redu je potraziti opsirnije objasnjenje negdje drugo (video, blog, dokumentacija, kurs, projekti).</span>
 + <span>Mnoge informacije necete nauciti napamet jer ih necete koristiti svakodnevno i to je u redu. Za razliku od onoga kako se uci u skoli, u programiranju je ucenje napamet beskorisno trosenje vremena. <em>Vazno je shvatiti koncept naucenog i biti svjestan da je nesto moguce</em>. Iz ovog razloga je korisno umjeti koristiti pretrazivac. Trik je znati kako pronaci potrebnu informaciju i kako je primjeniti.</span><!-- + <span>Jedna od vaznijih karakteristika za brzo usvajanje materije je <i>potpuni fokus</i>, medjutim izgradnja fokusa je proces i najbolje je poceti pomalo. U pocetku mozete odrediti male intervale fokusiranog rada i praviti <i>redovne pauze</i> te postepeno povecavati intervale (na najduze 60 - 90 minuta).</span> -->
-+ <span>Programiranje je tesko i kada se um suoci sa preprekom, suzdrzite se od prebrzo donesenih zakljucaka o vlastitim sposobnostima. Odmorite se i radite nesto potpuno drugo. <i>Biranje aktivnosti koja ne zahtjeva mentalni napor</i> moze vise koristiti od forsiranja jer u toku difuznog rada mozak pravi veze izmedju detalja. Zato se nerijetko desi klik i pojave ideje u vezi potencijalnog rjesenja. Cak i kada to nije slucaj, um ce biti svjeziji i spremniji da se suoci sa preprekom.</span>
++ <span>Programiranje je tesko i kada se um suoci sa preprekom, suzdrzite se od prebrzo donesenih zakljucaka o vlastitim sposobnostima. Odmorite se i radite nesto potpuno drugo. <i>Biranje aktivnosti koja ne zahtjeva mentalni napor</i> moze vise koristiti od forsiranja jer u toku difuznog rada mozak pravi veze izmedju detalja. Zato se nerijetko desi klik i pojave ideje u vezi potencijalnog rjesenja u toku pauze. Cak i kada to nije slucaj, um ce biti svjeziji i spremniji da se suoci sa preprekom.</span>
 + <span><em>Kultura transparentnosti i poniznosti</em> kroz iskrenost prema sebi i drugima u vezi svojih vjestina omogucuje otvorenost ka povratnim informacijama ukoliko nesto ili neko ukazuje na gresku. Internalizovanje povratnih informacija je prilika za napredak i ucenje.</span>
 
 ### Aktivno ucenje
@@ -188,12 +188,26 @@ Ako vas zanima vise o tehnikama koje mozete koristiti za aktivnije ucenje, provj
 
 ## Kako poceti sa web tehnologijama
 
-<i>Minimalni zahtjevi za solidnu pocetnu bazu je jasno razumijevanje HTML</i> (za definisanje strukture sadrzaja), <i>CSS</i> (za manipulisanje prikaza i stilizovanje sadrzaja) i <i>JavaScript</i> jezika (za programiranje web stranice i dodavanje dinamicke funckionalnosti). Neophodno je savladati tehnologije ovim redom.
+<i>Minimalni zahtjevi za solidnu pocetnu bazu je jasno razumijevanje HTML</i> (za definisanje strukture sadrzaja), <i>CSS</i> (za manipulisanje prikaza i stilizovanje sadrzaja) <i>i JavaScript jezika</i> (za programiranje web stranice i dodavanje dinamickih funckionalnosti).
 
-Medjutim, postoji nesto cega je dobro biti svjestan i zove se "tutorial hell". Odnosi se na beskrajnu fazu u kom novi developeri gledaju tutorijale, replikuju korake i kod radi ✨. Instruktor je prosao kroz otklanjanje gresaka, rjesavanje problema i prikazuje radnu verziju. Izostaje povratna informacija i ne znate sta ne znate. Lako je provesti previse vremena u ovoj fazi jer je jednostavnije, stice se (lazni) osjecaj napretka iako se znanje manje usvaja i informacije brzo zaboravljaju. Mozete ograniciti ovu fazu tako sto cete:
+### Balansiranje pasivnog i aktivnog ucenja
 
-1. Kroz nju samo nauciti osnove i shvatiti kako koncepti tehnologija koje ucite funkcionisu. U redu je preci neciji kurs ili drugi sadrzaj sa strukturom koja vodi pocetnika i tako ih nauciti. Moguce je i odrediti vremenski period trajanja koji je otprilike potreban za ucenja osnova.
-2. Nakon toga prestati gledati tutorijale i uciti samo ako pokusavate da napravite nesto sa tim znanjem. Umjesto toga raditi projekte, izazove i ucite po potrebi (kroz citanje dokumentacija, clanak, tutorijal, kurs itd.). Magija u tome je sto cete pri izgradnji vlastitog projekta traziti rjesenja na internetu i ona sama po sebi nekada nece odmah raditi jer je vas kontekst drugaciji. Mozda cete morati procitati dokumentaciju ili potraziti neki drugi izvor. Sa rjesavanjem problema dobijate praksu i iskustvo kroz koje ucite kako zapravo rjesenje radi da bi ga uspjesno implementirali u razlicitim situacijama, sto je drugacije od pracenja instruktora koji ima gotova rjesenja i korake za njegov projekat.
+Medjutim, postoji nesto cega je dobro biti svjestan prije pocetka ucenja i zove se <i>tutorial hell</i>. Odnosi se na <em>beskrajnu</em> fazu u kom novi developeri prelaze tutorijale/kurseve/knjige, replikuju korake i kod radi ✨. Najcesce zbog osjecaja da je neophodno znati sve prije pocetka svog projekta, ali je u redu poceti ga i guglati sve nejasnoce. 
+
+Problem nastaje u tome sto je instruktor prosao kroz otklanjanje gresaka, rjesavanje problema i prikazuje radnu verziju, te izostaje povratna informacija i svjest o znanju koje nedostaje. Lako je provesti mnogo vremena u ovoj fazi jer je jednostavnija, stice se osjecaj napretka iako se znanje povrsno usvaja i informacije brzo zaboravljaju. Nikada necete biti spremni i znati sve sto zaista treba dok ne uradite taj projekat.
+
+
+Ograniciti fazu tako sto cete:
+
+1. <span class="i">Kroz nju nauciti samo osnove</span>. U redu je preci neciji kurs ili drugi sadrzaj sa strukturom za pocetnike i tako ih usvojiti. Moguce je i odrediti vremenski period trajanja koji je otprilike potreban za ucenja osnova.
+
+<span>
+
+2. <span class="i">Nakon toga prestati gledati tutorijale</span> i uciti samo (po potrebi iz dokumentacija, clanaka, tutorijala, kurseva itd.) ako pokusavate da napravite nesto sa tim znanjem. </span>
+
+Magija u tome je sto bi pri izgradnji vlastitog projekta trazili rjesenja na internetu, ona nekada ne bi radiila jer je vas kontekst drugaciji i to rjesenje ne razumijete dovoljno da bi ga prilagodili sebi. Zbog ovakve frustrirajuce, <i>nesrecne ali i tragicne</i> 💩 okolnosti ce biti neophodno citati dosadne dokumentacije ili potraziti neki drugi izvor za vise informacija da bi uspjesno implementirali rjesenje. U procesu se stice praksa i iskustvo koje izgradjuje razumijevanje kako odredjena tehnologija radi i kako je primjeniti u razlicitim uslovima. Na ovaj nacin se informacije bolje usvajaju i duze pamte sto ima znacajnu prednost nad oponasanjem gotovih koraka koje je instruktor pripremio za svoj projekat.
+
+<span class="i">Poenta</span>: potrebno je znati zasto se neki izvor koristi, odnosno sta se pokusava izvesti sa tom informacijom i ne uciti cinjenice radi pukog ucenja kako bi one pocetnika odvele na visi nivo. Gdje je to primjenjivo u onom sto radis? Ako nemas odgovor, izmisli projekat za koji ce koristiti i voilà. <strong>Projekti ce zacementirati znanje</strong>.
 
 ### Izvori za ucenje
 
@@ -205,7 +219,7 @@ U ucenju vam mogu pomoci razni oblici sadrzaja. Izmedju ostalog i:
 + <span>'Bootcamp' je brz i intenzivan program/kurs. Osmisljen je da pripremi pocetnike za prakticni rad i obuhvata obradjivanje osnova nekoliko tehnologija. Ali se cini da su najcesce usmjereni ka full stack developmentu). Jedan od popularnih koje cesto preporucuju je "The Complete 2022 Web Development Bootcamp", objavljen na Udemy platformi ili <a target="_blank" href="https://www.youtube.com/watch?v=Xm4BObh4MhI">ovaj</a> YouTube bootcamp od svega 12 sati od Ania Kubow. Oba usmjerena ka full stack developmentu.</span>
 
 <a target="_blank" href="https://goalkicker.com/">Goalkicker</a> je izvor koji objavljuje <em>odlicne</em> besplatne biljeske za web tehnologije. 
-<a target="_blank" href="https://ebookfoundation.github.io/free-programming-books/">free-programming-books</a> je jedan od najpopularnijih GitHub repozitorija. Na njemu cete pronaci knjige i druge oblike izvora o programiranju. Projekat je preuzeo Free Ebook Foundation, a poceo je sa listom besplatnih knjiga o programiranju na platformi Stack Overflow.
+<a target="_blank" href="https://ebookfoundation.github.io/free-programming-books/">free-programming-books</a> je jedan od najpopularnijih GitHub repozitorija. Na njemu cete pronaci knjige i druge oblike izvora o programiranju. Projekat je preuzeo Free Ebook Foundation, a poceo je sa listom besplatnih knjiga o programiranju na Stack Overflow platformi.
 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn#where_to_start">MDN Web Docs</a> je dokumentacija koja ce vas voditi od pocetka kroz osnove web developmenta. <a href="https://htmlreference.io/">htmlreference.io</a> i <a href="_blank" href="https://cssreference.io/">cssreference.io</a> su vizuelni vodici i web stranice sa HTML i CSS referencama. <a href="https://javascript.info/" href="_blank">javascript.info</a> objasnjava JavaScript od osnovnih do naprednih tema sa jednostavnim i detaljnim objasnjenjima. 
 
 <a target="_blank" href="https://www.frontendmentor.io/resources">Ovdje</a> mozete pronaci mnogo vise korisnih izvora, ali je nemoguce sve obuhvatiti. Svrha je prikazati razlicitost medija koji se mogu pronaci na internetu. Ne morate se ograniciti navedenim. Izaberite ono sto vam odgovara i ispratite do kraja.
@@ -217,7 +231,7 @@ U ucenju vam mogu pomoci razni oblici sadrzaja. Izmedju ostalog i:
 
 
 
-Poslije teorije osnova je vrijeme za uprljati ruke:
+Poslije teorije i osnova uprljati ruke sa:
 
 ### Projekti i izazovi
 
@@ -225,7 +239,7 @@ Uradite <em>projekat</em> sa tehnologijama u kojim zelite postati bolji. Nadjite
 
 Raditi <em>izazove</em> kodiranja je korisno za sticanje iskustva, aktivno usvajanje naucenog i prosirivanje postojece baze znanja. Neki od sajtova sa zadacima i izazovima su <a target="_blank" href="https://www.frontendmentor.io/challenges">Frontend Mentor</a>, <a target="_blank" href="https://www.codementor.io/">codementor</a>, <a target="_blank" href="https://100dayscss.com/">100 Days of CSS</a>, <a target="_blank" href="https://javascript30.com/">30 Day Vanilla JS coding challenge</a>, <a target="_blank" href="https://tevko.github.io/practice/">Tevko Practice</a>, <a target="_blank" href="https://www.dailyui.co/">Daily UI</a>, <a target="_blank" href="https://www.codewell.cc/">Codewell</a>, <a target="_blank" href="https://devchallenges.io/">Dev Challenges</a>,  <a target="_blank" href="https://piccalil.li/category/front-end-challenges-club/?ref=blog.moeminmamdouh.com">Piccalilli</a>, <a target="_blank" href="https://www.hackerrank.com/">HackerRank</a>, <a target="_blank" href="https://www.codewars.com/">Codewars</a> itd. <a target="_blank" href="https://dribbble.com/">Dribble</a> ima veliku kolekciju dizajniranih web stranica koje mozete klonirati kroz kod. <a target="_blank" href="https://onepagelove.com/templates/html-templates">Onepagelove</a> je sajt sa razlicitim temama i sablonima web stranica kojih je moguce skinuti ili koristiti za inspiraciju. Potrazite "coding challenges" ili "coding wars". 
 
-<p class="tip right-tip" style="--span-row: 2;"><a target="_blank" href="https://www.100daysofcode.com/">#100daysofcode</a> ce vam mozda biti zanimljiv trend.</p>
+<p class="tip right-tip" style="--span-row: 2;"><a target="_blank" href="https://www.100daysofcode.com/">#100daysofcode</a> ce mozda zvucati kao zanimljiv trend.</p>
 
 Preuzimanje jednostavnih <em>honorarnih projekata</em> (na platformama poput <a target="_blank" href="https://www.upwork.com/">Upwork</a>) znaci da cete biti prisiljeni dostaviti proizvod za novac i prisiljeni da ucite. 
 
@@ -243,7 +257,7 @@ Pokazite volju da ucite, pozitivan stav, prizemnost i svjesnost svojih ogranicen
 
 Ukoliko ne dobijete posao, dobicete iskustvo intervjuisanja i povratnu informaciju iz kojih mozete zakljuciti na cemu poraditi. U toku potrage za poslom nastaviti unaprijedjivati vjestine kroz licne projekte, dodavati ih u portfolio i siriti bazu vjestina: <em><a target="_blank" href="https://roadmap.sh/frontend">Mapa puta</a></em> je dijagram za usmjeravanje programera koji nisu sigurni sta sledece savladati.
 
-Note 📝: Stranica je u razvoju.
+📝: Stranica je u razvoju.
 
 <!-- ## Dodatni linkovi
 []:https://youtu.be/LTwFX-hitQo?t=255 : This is ALL you NEED to Become a Web Developer Today (2021)
