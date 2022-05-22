@@ -1,5 +1,5 @@
 ---
-title: Namjerno vjezbanje
+title: Promisljeno vjezbanje
 date: 2022-03-17T19:33:53.977Z
 author: Marijana Sevo
 summary: Promisljeno vjezbanje se odnosni na specificnu vrstu prakse koja je svrsishodna i sistematicna. Dok standardan nacin vjezbanja nerijetko ukljucuje bezumno ponavljanje, promisljena vjezba zahtjeva fokusiranu paznju i provodi se sa specificnim ciljem popravljanja performansi.
