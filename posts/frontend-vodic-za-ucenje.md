@@ -40,18 +40,24 @@ TODO: Installing basic software
 
 ---------------->
 
-<i>Navedeni su samo neki od poznatijih besplatnih editora</i> otvorenog koda. Obicno dolaze sa odredjenim integrisanim funkcijama, ali se mogu instalirati dodatne po potrebi. Postoje razliciti stavovi na temu koji je najbolji, ali probajte zeljene editore kroz rad i zadrzati se na onom koji najvise odgovara.
+<i>Navedeni su neki od poznatijih besplatnih editora</i> otvorenog koda sa naznacenim izuzetkom. Obicno dolaze sa odredjenim integrisanim funkcijama, ali se mogu instalirati dodatne po potrebi. Postoje razliciti stavovi na temu koji je najbolji, ali probajte zeljene editore kroz rad i zadrzati se na onom koji najvise odgovara. 
 
 ### Sublime Text
 
-Mnogi programeri ga koriste zbog <em>brzine</em> i jednostavnosti. Pri instalaciji ima osnovne integrisane funkcije za programiranje ali postoji veliki broj paketa za prosirivanje ovakvih funkcija koje je napravila zajednica. Potrebno je vrijeme da se zapamte precice i prilagodi sebi, ali jednom kada se ovo savlada moguce je uredjivati i pisati kod na najbrzi moguci nacin.
+Sublime Text se cesto koristi zbog njegove <em>brzine</em> i jednostavnosti. Pri instalaciji ima osnovne integrisane funkcije za programiranje ali postoji veliki broj paketa za prosirivanje ovakvih funkcija koje je napravila zajednica. Potrebno je vrijeme da se zapamte precice i prilagodi sebi, ali jednom kada se ovo savlada moguce je uredjivati i pisati kod na najbrzi moguci nacin.
 
 
-Od 2021. godine dostupan je <a target="_blank" href="https://www.sublimetext.com/download">Sublime Text 4</a> koji moze biti preuzet i koristen besplatno za evaluaciju. Do sada nije postojalo vremensko ogranicenje za ovu evaluaciju, ali u besplatnoj verziji se povremeno pojavi prozorcic koji pita da kupite licencu.
+Od 2021. godine dostupan je <a target="_blank" href="https://www.sublimetext.com/download">Sublime Text 4</a> koji moze biti preuzet i koristen besplatno za evaluaciju. Do sada nije postojalo vremensko ogranicenje za ovu evaluaciju, ali se u besplatnoj verziji povremeno pojavi prozorcic koji pita da li zelite kupiti licencu.
 
 ### VSCode
 
 <a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a> je kompleksan program koji vise zauzima sto ga cini sporijim. Medjutim on je <em>jednostavniji za koristenje</em> i <em>bogat je funkcijama</em> odmah po instalaciji. Ovakav editor pruza manji otpor da bi se savladao neki editor.
+
+### WebStorm
+
+Jedan od popularnih je i <a target="_blank" href="https://www.jetbrains.com/webstorm/">WebStorm</a>. On je kao i Visual Studio Code integrisano razvojno okruzenje (IDE), sto znaci da je bogat raznim svojstvima i spreman da barata velikim projektima. Ono sto dolazi uz kompleksnost je i to sto nije brz poput Sublime Texta. Zato programeri nekada koriste IDE poput WebStorm i VSCode na velikim projektima, a Sublime Text kada je potrebno raditi na pojedinacnom fajlu.
+
+*Ovaj IDE nije besplatan, ali se cesto koristi u firmama. Sigurna sam da postoji i <i>Free Educational License</i>. wink
 
 ### Brackets
 
@@ -128,7 +134,7 @@ TODO:
 Prije nego objavim post o osnovnim smjernicama i alatima koji mogu olaksati "dizajnerski" dio posla,
  -->
 
-## Postaviti sajt na internet
+## Objavljivanje sajta na internet
 
 <!-- 
 TODO: 
