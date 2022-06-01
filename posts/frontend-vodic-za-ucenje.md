@@ -33,13 +33,6 @@ U ovakvim igrama se uci i vjezba ispravan polozaj prstiju na tastaturi, kao i ko
 
 Ono sto takodje moze popraviti iskustvo pisanja koda je uredjivac izvornog koda (source-code editor) ili editor. Izbor glavnog alata za pisanje koda igra znacajnu ulogu u radnom toku i produktivnosti.
 
-<!----------------
-TODO: Installing basic software 
-
-[]: <p class="tip right-tip" style="--span-row: 2;">Na temu alata za izradu web stranica vise u <a href="">ovom</a> tekstu.</p> 
-
----------------->
-
 <i>Navedeni su neki od poznatijih besplatnih editora</i> otvorenog koda sa naznacenim izuzetkom. Obicno dolaze sa odredjenim integrisanim funkcijama, ali se mogu instalirati dodatne po potrebi. Postoje razliciti stavovi na temu koji je najbolji, ali probajte zeljene editore kroz rad i zadrzati se na onom koji najvise odgovara. 
 
 ### Sublime Text
@@ -96,11 +89,6 @@ Ipak opis klijenta i servera ne govori cijelu pricu. Ukljuceno je mnogo drugih d
 
 Sve navedeno u ovom dijelu teksta je jednostavno savladati kroz ucenje HTML, CSS i JavaScript jezika. Cilj je samo prikazati kako otprilike izgleda struktura nekog jednostavnog sajta i koncept sadrzaja koji ga cini.
 
-<!----------------
-TODO: 
-[]: More advanced struktura fajlova i referiraj tamo kroz tip
----------------->
-
 Pomenuli smo da je sajt neki broj fajlova sa kodom, stilovima, medijskim sadrzajem itd. Da bi ti fajlovi djelovali kao cjelina neophodno je sastaviti ih u logicnu i povezanu strukturu kako bi bili svjesni ostalog sadrzaja sa kojim treba komunicirati. Ovaj proces izgradnje web stranica se izvrsava na <i>lokalnom kompjuteru</i> da bi se uvjerili da web stranica izgleda i radi ispravno prije nego se otpremi na server.
 
 U ovom <a target="_blank" href="/posts/sta-cini-web-sajt/#index.html-pocetna-web-stranica">tekstu</a> su ukratko predjeni pojedinacni segmenti koji najcesce cine sajt:
@@ -128,18 +116,7 @@ Jedna ideja moze kulminirati u beskonacan broj pitanja i dugu listu zadataka, al
 + <span>Inspirisano sa <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Thinking_before_coding">How do I start to design my website?</a></span>
 + <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">Ovdje</a> mozete pronaci osnove.</span>
 
-<!-- 
-TODO: 
-[]: smjernice i alati koji olaksavaju dizajnerski dio posla laicima
-Prije nego objavim post o osnovnim smjernicama i alatima koji mogu olaksati "dizajnerski" dio posla,
- -->
-
 ## Objavljivanje sajta na internet
-
-<!-- 
-TODO: 
-[]: kako izabrati domen
- -->
 
 Proces postavljanja sajta na internet najvise ovisi od usluge hosting provajdera, ali su po pravilu obicno potrebne 3 stavke koje su prethodno pomenute:
 
@@ -165,11 +142,11 @@ Tema za neki drugi post 📝: Ovaj tip hostinga moze sluziti i sajtove koji su d
 
 ## Optimalan pristup ucenju
 
-Znam da se tekst oduzio, ali se priblizava konkretnom dijelu gdje ceka najvise posla. <!-- Najkraci je jer na internetu vec postoji beskonacna kolicina kreiranog sadrzaja koji uci web tehnologije.--> Navedene teme mogu sacuvati vrijeme i ne mora sve biti nauceno iz licnih gresaka. Zato sada pricamo o tome kako pojednostaviti proces ucenja, sacuvati vrijeme i o konceptima kojih je dobro biti svjestan:
+Znam da se tekst oduzio, ali se priblizava konkretnom dijelu gdje ceka najvise posla. Navedene teme mogu sacuvati vrijeme i ne mora sve biti nauceno iz licnih gresaka. Zato sada pricamo o tome kako pojednostaviti proces ucenja, sacuvati vrijeme i o konceptima kojih je dobro biti svjestan:
 
 + <span>Web development je ogroman labirint. Postoji mnogo vjestina koje je moguce nauciti, ali je vazno <em>fokusirati se na jednu vjestinu u odredjenom periodu</em>.</span>
 + <span>Medju prvim koracima je vazno <em>upoznati osnove</em>. One obicno pocetnika uce sintaksu i pravila tog jezika, ali i kako razmisljati kao programer. Precice su kontraproduktivne za vecinu (kao ucenje bootstrapa prije CSS-a ili Reacta prije JavaScripta). One znace brz pocetak, ali i naknadnu izgubljenost, ogranicene mogucnosti i trosenje vremenja.</span>
-+ <span>Obratite paznju na svoj zivotni stil i kako on utice na nivo energije. <em>Primjeniti zdravije navike i nacin zivota moze ucenje uciniti znacajno optimalnijim</em> ali i popraviti kvalitet zivota. Obratite paznju na ishranu, fizicku aktivnost, spavanje, redovne pauze i vrijeme za sebe.</span><!-- TODO:[]: Potencijalna tema https://youtu.be/mw0LGzIKvoo?t=591 -->
++ <span>Obratite paznju na svoj zivotni stil i kako on utice na nivo energije. <em>Primjeniti zdravije navike i nacin zivota moze ucenje uciniti znacajno optimalnijim</em> ali i popraviti kvalitet zivota. Obratite paznju na ishranu, fizicku aktivnost, spavanje, redovne pauze i vrijeme za sebe.</span>
 + <span>Lako je izgubiti se u tutorijalima i prelaziti sa teme na temu. Umjesto prelazenja svakog izvora po malo i prebacivanje na drugi ispocetka, <em>izabrati medij i ispratiti ga do kraja</em>. Ovako je jednostavnije izbjeci razvodnjenu paznju, duze zadrzati fokus i brze organizovano preci osnove. U redu je potraziti opsirnije objasnjenje negdje drugo (video, blog, dokumentacija, kurs, projekti).</span>
 + <span>Mnoge informacije necete nauciti napamet jer ih necete koristiti svakodnevno i to je u redu. Za razliku od onoga kako se uci u skoli, u programiranju je ucenje napamet beskorisno trosenje vremena. <em>Vazno je shvatiti koncept naucenog i biti svjestan da je nesto moguce</em>. Iz ovog razloga je korisno umjeti koristiti pretrazivac. Trik je znati kako pronaci potrebnu informaciju i kako je primjeniti.</span><!-- + <span>Jedna od vaznijih karakteristika za brzo usvajanje materije je <i>potpuni fokus</i>, medjutim izgradnja fokusa je proces i najbolje je poceti pomalo. U pocetku mozete odrediti male intervale fokusiranog rada i praviti <i>redovne pauze</i> te postepeno povecavati intervale (na najduze 60 - 90 minuta).</span> -->
 + <span>Programiranje je tesko i kada se um suoci sa preprekom, suzdrzite se od prebrzo donesenih zakljucaka o vlastitim sposobnostima. Odmorite se i radite nesto potpuno drugo. <i>Biranje aktivnosti koja ne zahtjeva mentalni napor</i> moze vise koristiti od forsiranja jer u toku difuznog rada mozak pravi veze izmedju detalja. Zato se nerijetko desi klik i pojave ideje u vezi potencijalnog rjesenja u toku pauze. Cak i kada to nije slucaj, um ce biti svjeziji i spremniji da se suoci sa preprekom.</span>
@@ -189,8 +166,6 @@ Ove tehnike prisiljavaju dublje razmisljanje o temi i razumijevanje kako se dije
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Don&#39;t practice until you get it right. Practice until you can&#39;t get it wrong.<a href="https://twitter.com/hashtag/javascript?src=hash&amp;ref_src=twsrc%5Etfw">#javascript</a> <a href="https://twitter.com/hashtag/100daysofcode?src=hash&amp;ref_src=twsrc%5Etfw">#100daysofcode</a></p>&mdash; Palash (@palashv2) <a href="https://twitter.com/palashv2/status/1289797104072679426?ref_src=twsrc%5Etfw">August 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Ako vas zanima vise o tehnikama koje mozete koristiti za aktivnije ucenje, provjerite ovu <a target="_blank" href="/posts/tehnike-za-aktivno-ucenje/">vezu</a>. 
-
-<!-- Sastoji se od nekoliko koraka 1 Ucenje. 2 Pokusati objasniti (djetetu) jednostavnim izrazima. U toku ovog koraka je neizbjezno pronaci rupe u znanju ali to je cilj. 3 Popuniti praznine. Pronaci informacije koje nedostaju i povezati ih sa ostalim znanjem. Svrha ovog koraka je fokusirati se na slabosti. 4 Pojednostaviti. Nije lako otkloniti nered i visak informacija, te objasniti nesto dovoljno jasno da i mala djeca mogu razumjeti.  4. korak prisiljava dublje razmisljanje o temi, razumijevanje kako se dijelovi informacija uklapaju i sprecava da previdimo praznine u znanju. Umjesto pukog kopiranja koda dobro je <em>kucati kod</em> kada pratite instrukcije: ovako vise obracamo paznju na detalje, sintaksu, kako se pise funkcija, kako se koriste parametri unutar funkcije, gdje ide tacka i zarez itd. Kroz prepisivanje se dobija uvid u to kako izgleda i kako se pise dobar kod. Korak dalje je probati <em>napisati kod rukom na papir</em>? Moguce je da cete pisati biljeske, ali vjerovatno cete primjetiti da nemaju znacaj za prisjecanje informacija kao sto su imale kada ste se pripremali za testove. U ovom slucaju <em>komentarisanje koda</em> je djelotvornije. Kada osjetite da pretjerano komentarisete, vjerovatno ne komentarisete dovoljno. <em>Pretjerujte</em>. Objasnite svaku linija koda i sta one rade. Nije vazno da li ste vi napisali tu liniju ili prepisali sa interneta. TODO:[]: Napisati clanak o tome zasto komentarisati kod []: Most people think the comments are there to explain the code to other coders, but it's the code that's there to explain the comments to the computer. Drugi razlog je to sto cete graditi sjajnu naviku od pocetka. Jedna od vaznih vrlina dobrog programera je komunicirati kroz komentare sto je moguce jasnije. Sa razvijanjem vjestina cete prepoznati sta je potrebno, a sta nije potrebno komentarisati. Pisanje dokumentacije (poput `README.md` dokumenta na GitHubu) ce takodje mnogo vise doprinjeti od biljeski. Pricamo o navikama koje i mnogi iskusniji programeri previde. One obezbjedjuju solidniji pocetak i naknadno laksi put pred sobom. Znacajno doprinose usvajanju i utemeljenju znanja (pored toga sto su vrlo privlacne poslodavcima i imate sta pokazati). Razlika izmedju komentara i dokumentacije je ta sto sa komentarima objasnjavate sta radi dio koda, a sa dokumentacijom, sa kojim tehnologijama, kako, sta radi vasa aplikacija, sta je njena svrha itd. naucite markdown TODO: []: napisi clanak o markdown-u []:izazovi za oblast koja se obradjuje--> 
 
 ## Kako poceti sa web tehnologijama
 
@@ -230,13 +205,6 @@ U ucenju vam mogu pomoci razni oblici sadrzaja. Izmedju ostalog i:
 
 <a target="_blank" href="https://www.frontendmentor.io/resources">Ovdje</a> mozete pronaci mnogo vise korisnih izvora, ali je nemoguce sve obuhvatiti. Svrha je prikazati razlicitost medija koji se mogu pronaci na internetu. Ne morate se ograniciti navedenim. Izaberite ono sto vam odgovara i ispratite do kraja.
 
-<!-- TODO: resources and tools for frontend 
-[]: search https://www.google.com/search?q=free+sources+to+learn+front+end&oq=free+sources+to+learn+front+end&aqs=chrome..69i57j69i64.5494j0j4&sourceid=chrome&ie=UTF-8
-[]: https://javascript.plainenglish.io/7-useful-free-resources-for-front-end-developers-f427cf5d5392
- -->
-
-
-
 Poslije teorije i osnova uprljati ruke sa:
 
 ### Projekti i izazovi
@@ -249,11 +217,6 @@ Raditi <em>izazove</em> kodiranja je korisno za sticanje iskustva, aktivno usvaj
 
 Preuzimanje jednostavnih <em>honorarnih projekata</em> (na platformama poput <a target="_blank" href="https://www.upwork.com/">Upwork</a>) znaci da cete biti prisiljeni dostaviti proizvod za novac i prisiljeni da ucite. 
 
-<!-- TODO: https://frontloops.io/ not worth paying so:
-[]:Frontloops challenges : https://github.com/zathio/frontloops-challenges
-[]:CSS Zen Garden http://www.csszengarden.com/ 
-[]: Interview questions: https://www.quora.com/What-is-required-to-learn-to-get-an-entry-level-Front-End-Development-Job-->
-
 
 ## Sirenje vjestina i posao
 
@@ -263,16 +226,4 @@ Pokazite volju da ucite, pozitivan stav, prizemnost i svjesnost svojih ogranicen
 
 Ukoliko ne dobijete posao, dobicete iskustvo intervjuisanja i povratnu informaciju iz kojih mozete zakljuciti na cemu poraditi. U toku potrage za poslom nastaviti unaprijedjivati vjestine kroz licne projekte, dodavati ih u portfolio i siriti bazu vjestina: <em><a target="_blank" href="https://roadmap.sh/frontend">Mapa puta</a></em> je dijagram za usmjeravanje programera koji nisu sigurni sta sledece savladati.
 
-📝: Stranica je u razvoju.
-
-<!-- ## Dodatni linkovi
-[]:https://youtu.be/LTwFX-hitQo?t=255 : This is ALL you NEED to Become a Web Developer Today (2021)
-
-[]:https://www.youtube.com/watch?v=n7JhRDRK3Gg : Stop Watching Coding Tutorials in 2021
-
-[]:https://www.scribd.com/document/351240772/Vodi%C4%8D-Za-U%C4%8Denje-Web-Programiranja
-or
-https://web.archive.org/web/20170405201023/https://blog.petrovic.gr/2016/12/frontend-development-a-learning-guide/
-
-[]: Path and videos: https://frontendmasters.com/learn/
- -->                                                                                                                                    
+📝: Stranica je u razvoju.        

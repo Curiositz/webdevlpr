@@ -26,18 +26,6 @@ Trazeni server odgovara na zahtjev sa svim potrebnim fajlovima, te web pregledac
 
  Ipak pojednostavljeni opis komunikacije klijenta i servera ne govori cijelu pricu. Ukljuceno je mnogo drugih dijelova.
 
- 
-
-<!-- ## Pojednostavljeni pojmovi
-
-Neki od termina koji se pominju u tekstu i prije nego se potpuno objasne.
-
-<i>Internet konekcija</i> omogucava slanje i primanje podataka na internetu. Ona je poput puta izmedju klijenta i servera ili ulice izmedju vas i marketa. Ne sumnjam da je jasan vecini.
-
-<i>TCP/IP</i> ili Transmission Control Protocol i Internet Protocol jesu komunikacijski protokoli koji definisu pravila za komunikaciju — kako podaci trebaju putovati internetom. Moze se zamisliti kao prevozno sredstvo do marketa (recimo ako definisemo da je to hod ili biciklo).
-
-<i>HTTP</i> ili Hypertext Transfer Protocol je protokol koji definise jezik izmedju klijenta i servera kako bi se razumijeli i ispravno interpretirali zahtjeve i podatke. Poput jezika koji koristite sa prodavcem da bi dobili upravo ono sto zelite. -->
-
 ## IP adrese i domene
 
 Svakom povezanom uredjaju na internetu je dodjeljena jedinstvena IP adresa (Internet Protocol address). Svrha IP adrese je dodijeliti identifikator svakom uredjaju na internetu kako bi se mogao pronaci i komunicirati sa njim. Pomocu nje pristupamo racunaru (serveru) sa zeljenim sadrzajem.
@@ -144,6 +132,3 @@ Drugi dio teksta i vise o HTTP verzijama, metodama, porukama, zaglavljima, kesir
 + <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">How the Web works</a> (tekst)</span>
 + <span><a target="_blank" href="https://www.youtube.com/watch?v=hJHvdBlSxug">How The Web Works - The Big Picture</a> (youtube)</span>
 + <span><a target="_blank" href="https://www.youtube.com/watch?v=e4S8zfLdLgQ">How the Internet Works for Developers - Pt 1 - Overview & Frontend</a> (youtube)</span>
-
-<!-- Sire objasnjenje o tome <a href="https://www.youtube.com/watch?v=zN8YNNHcaZc">How does the internet work? (Full Course)</a> je kurs koji mogu pratiti i oni koji nemaju prethodno znanje o temi. -->
-

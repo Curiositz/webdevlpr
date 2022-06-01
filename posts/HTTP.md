@@ -363,8 +363,6 @@ Ova klasa kodova se koristi za oznacavanje greske servera tokom obrade zahtijeva
 + <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP — MDN Web Docs</a></span>
 + <span><a target="_blank" href="https://code.tutsplus.com/series/http-succinctly--net-33683">HTTP sazeto</a></span>
 
-<!-- U ovisnosti od toga da li klijent ima autoritet da pristupi sadrzaju i da li je zahtjev moguce izvrsiti, server odgovara sa HTTP status kodom koji govori o tome kako je server izvrsio zahtjev klijenta. -->
-
 
 <!-- Sire objasnjenje o tome <a href="https://www.youtube.com/watch?v=zN8YNNHcaZc">How does the internet work? (Full Course)</a> je kurs koji mogu pratiti i oni koji nemaju prethodno znanje o temi. -->
 

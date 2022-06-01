@@ -58,11 +58,3 @@ Kurs uci osnovnim vjestinama za rjesavanje racunarskih problema kroz Java progra
 + <a target="_blank" href="https://cs50.harvard.edu/python/2022/">Harvard: CS50’s Introduction to Programming with Python</a>
 + <a target="_blank" href="https://online.umich.edu/series/python-for-everybody/">Michigan: Python for Everybody</a>
 + <a target="_blank" href="https://dev.to/manocormen/500-free-computer-science-online-courses-from-the-world-s-top-cs-universities-3pg5">MIT, Stanford, Harvard: 500 Free Computer Science Courses from World's Top-50 CS Universities</a>
-
-
-
-
-<!-- Zabiljezite slabosti koje prepoznate i uzastopno radite vjezbe za unaprijedjenje tih vjestina.
--->
-
-

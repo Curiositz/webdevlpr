@@ -39,7 +39,6 @@ Bez skiciranja mape puta nije moguce stici na odrediste. Tako pitanje "Koji je n
 
 Note 📝: Nema potrebe biti opsjednut savrsenom dekonstrukcijom puta. Pocni i prilagodi po potrebi.
 
-
 2. Izazovi na granici trenutnih sposobnosti.
 
 Za svaki segmet je potrebno <b>odrediti grupu zadataka koja ima za cilj da gura izvan trenutnih sposobnosti u okviru segmenta</b> (ka cilju). U ovoj fazi se ne radi o sto duzoj listi zadataka koje treba obaviti ili kvantitetu. Fokus treba biti na izazovu koji pomjera granice trenutnih programerskih vjestina na nacin da je <i>tezak i dostizan</i> u isto vrijeme. Nakon odredjenog perioda van komfor zone (tijelo i u ovom slucaju) um se prilagodjava i takvo ponasanje postaje navika.
@@ -60,10 +59,7 @@ Izgradnja fokusa je proces. U redu je poceti malim koracima i postepeno povecava
 
 <em>Potpun fokus u kracim sesijama je superiorniji od djelimicnog u duzim</em>. Dobra ideja je izbjegavati planiranje vjezbanja u duzim vremenskim intervalima i prilagodjavanje intenziteta vjezbe da bi ona mogla istrajati tokom zadanog vremena. Djelotvornija promisljena vjezba je sa najintenzivnijim mogucim fokusom u trajanju koje je izvedivo (kraci periodi - sprint), potom uzeti pauzu i ponavljati ovaj sablon. 
 
-<a target="_blank" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro tehnika 🍅</a> se bazira na ovakvim sesijama. Ako Pomodoro ima previse grubu strukturu za vas, pauze mozete planirati nakon sto <a target="_blank" href="https://en.wikipedia.org/wiki/Flow_(psychology)"><em>flow</em></a> stanje zavrsi na prirodan nacin. Prisilni prekidi flow stanja su iritantni. Pauze mogu trajati od 5, 10, 15, 30 minuta do dan ili dva. Sistem treba biti prilagodjen osobi, a za to je potrebno eksperimentisati i slusati tijelo. Na primjer, osjecaj pospanosti, neugodnosti, bola ili iscrpljenosti su znakovi za pauzu. 
-
-<!-- A ako niste u flow stanju, onda je prirodno napraviti strukturno odredjene pauze (poput onih u Pomodoru), kada svejedno idete jeste, napuniti casu vode itd.  -->
-
+<a target="_blank" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro tehnika 🍅</a> se bazira na ovakvim sesijama. Ako Pomodoro ima previse grubu strukturu za vas, pauze mozete planirati nakon sto <a target="_blank" href="https://en.wikipedia.org/wiki/Flow_(psychology)"><em>flow</em></a> stanje zavrsi na prirodan nacin. Prisilni prekidi flow stanja su iritantni. Pauze mogu trajati od 5, 10, 15, 30 minuta do dan ili dva. Sistem treba biti prilagodjen osobi, a za to je potrebno eksperimentisati i slusati tijelo. Na primjer, osjecaj pospanosti, neugodnosti, bola ili iscrpljenosti su znakovi za pauzu.
 
 
 5. Prakticna primjena.
@@ -129,11 +125,3 @@ Kada se umorite ili suocite sa preprekom tokom promisljenog/namjernog vjezbanja 
 ## Dodatni linkovi
 
 + <a target="_blank" href="https://fs.blog/deliberate-practice-guide/">The Ultimate Deliberate Practice Guide: How to Be the Best</a>
-
-
-
-
-<!-- Zabiljezite slabosti koje prepoznate i uzastopno radite vjezbe za unaprijedjenje tih vjestina.
--->
-
-

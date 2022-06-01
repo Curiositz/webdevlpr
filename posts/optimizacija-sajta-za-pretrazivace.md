@@ -295,5 +295,3 @@ Preporucuje se smanjiti upotrebu JavaScripta, posebno eksternih skripti koji se 
 ### Dodatni linkovi
 
 <a target="_blank" href="https://moz.com/learn/seo/seo-cheat-sheet">SEO Cheat Sheet za Web Developere</a>
-
-
