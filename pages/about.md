@@ -12,17 +12,15 @@ thumbnail: /static/img/logo-bg-square.png
 # Zdravo, ja sam Marijana.
 
 <section class="main-about">
-  <p>Ovdje mozes citati neke <em>biljeske</em> vezane za razvoj web-a koje pravim u procesu ucenja.</p>
+  <p>Ovdje mozes citati neke <em>biljeske</em> vezane za razvoj web-a (i ko zna cega jos) koje mi se ucine zanimljivima.</p>
   <br>
-  <p>Internet je dostupan mnogima i njegov potencijal za prenosenje ideja, rjesavanje problema, izrazavanje i komunikaciju je skoro beskonacan. Zato je <em>web development</em> tema bloga. Takodje i da bih koristila postove kao referencu, dijelila nauceno, pomogla nekome ko zeli da uci i mozda upoznala nove ljude koje zanima ova oblast.</p>
-  <br>
-  <p>2021. godine sam zavrsila smijer inzenjerstvo informacionih tehnologija u Banja Luci.</p>
+  <p>Internet je dostupan mnogima i njegov potencijal za prenosenje ideja, rjesavanje problema, izrazavanje i komunikaciju je skoro beskonacan. Zato je <em>web development</em> tema bloga. Takodje i da bih koristila postove kao referencu, dijelila nauceno, inspirisala nekoga da sazna vise i mozda upoznala nove ljude koje zanima ova oblast.</p>
 </section>
 
 <hr>
 
 <section class="technologies">
-  <p>Dopada mi se ideja poznavanja full stack tehnologija, ali sam ovog trenutka fokusirana na <em>front end</em> put.</p>
+  <p>Dopada mi se ideja poznavanja full stack tehnologija, ali se ovog trenutka zanimam za <em>front end</em> put.</p>
   <div class="technologies-icons">
     <i role="img" aria-label="HTML" class="fab fa-html5 fa-3x"></i>
     <i role="img" aria-label="CSS" class="fab fa-css3-alt fa-3x"></i>
@@ -46,8 +44,11 @@ thumbnail: /static/img/logo-bg-square.png
       <!-- <a href="https://www.instagram.com/webdevlprr/" target="_blank">
         <i role="img" aria-label="Instagram" class="fab fa-instagram"></i>
       </a> -->
+      <a href="https://www.linkedin.com/in/marijana-sevo/" target="_blank">
+        <i role="img" aria-label="Linkedin" class="fab fa-linkedin"></i>
       <a href="https://twitter.com/webdevlpr" target="_blank">
         <i role="img" aria-label="Twitter" class="fab fa-twitter-square"></i>
+      </a>
       </a>
     </div>
   </div>
