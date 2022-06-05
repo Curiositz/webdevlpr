@@ -10,7 +10,7 @@ thumbnail: /static/img/http.jpg
 ---
 
 Hypertext Transfer Protocol je temelj Word Wide Weba i <i>komunikacijski protokol</i> pomocu kojeg je moguce povezati se sa serverima sirom svijeta. 
-Primarna funkcija HTTP protokola je da uspostavi vezu sa serverom, trazi sve potrebne informacije za prikaz web stranice i preuzme podatke koje je server proslijedio kao odgovor. 
+Primarna funkcija HTTP protokola je da uspostavi vezu sa serverom, trazi sve potrebne informacije za prikaz web stranice i preuzme odgovor od servera. 
 
 <p class="tip right-tip" style="--span-row: 2;">Ovaj post je nastavak teksta <a href="/posts/kako-radi-web/">Kako radi web?</a>.</p>
 
@@ -19,16 +19,18 @@ Primarna funkcija HTTP protokola je da uspostavi vezu sa serverom, trazi sve pot
  <figcaption>HTTP protokol u URL adresi.</figcaption>
 </figure>
 
-<a target="_blank" href="/posts/kako-rade-internet-i-web#url-adresa">URL adresa</a> usmjerava i identifikuje sa kim klijent zeli komunicirati, ali ne govori serveru sta se zahtijeva od njega. Web pregledac salje <i>zahtjeve</i> koristeci HTTP poruke, a HTTP protokol definise jezik izmedju <a target="_blank" href="/posts/kako-rade-internet-i-web#klijent-i-server">klijenta i servera</a>. 
+<a target="_blank" href="/posts/kako-rade-internet-i-web#url-adresa">URL adresa</a> identifikuje sa kojim serverom klijent zeli komunicirati, ali ne govori i sta se od njega trazi. Zato web pregledac salje <i>zahtjeve</i> kroz HTTP poruke, a HTTP protokol definise jezik izmedju <a target="_blank" href="/posts/kako-rade-internet-i-web#klijent-i-server">klijenta i servera</a>. 
 
-Kroz HTTP poruku klijent (web pregledac) naglasava kakvu reprezentaciju sadrzaja zeli, kao i klijentovu namjeru. HTTP poruka je jednostavna tekstualna poruka, a koncept zahtjeva i odgovora je lako usvojiti jer se nazivi u potpunosti opisuju.
-<i>Zahtjev</i> sadrzi HTTP metodu koja serveru govori sta klijent zeli da radi (cita, modifikuje, brise itd.), putanju do sadrzaja i zaglavlja koja daju dodatne podatke o klijentu, sadrzaju koji se trazi poput zeljene forme, uslova itd.
-<i>Odgovor</i> ukljucuje statusni kod o uspjesnosti realizacije zahtjeva, zaglavlja sa dodatnim korisnim informacijama o odgovoru i sadrzaj.
+Kroz HTTP poruku klijent (web pregledac) naglasava kakvu reprezentaciju i u kom obliku zeli sadrzaj, kao i klijentovu namjeru (da cita, modifikuje, brise itd.). HTTP poruka je jednostavna tekstualna poruka koja moze biti zahtjev od klijenta ili odgovor od servera:
+<i>Zahtjev</i> sadrzi HTTP metodu (`GET`, `POST`, `Put`, `DELETE`..) koja serveru govori sta klijent zeli da uradi, gdje se nalazi zeljeni sadrzaj i zaglavlja koja daju dodatne podatke o sadrzaju koji se trazi kao i vise informacija o samom klijentu.
+<i>Odgovor</i> ukljucuje statusni kod o uspjesnosti realizacije zahtjeva, zaglavlja sa dodatnim korisnim informacijama o odgovoru i sadrzaj odgovora.
 
-HTTP ima definisan format kojim oblikuje zahtjev i sve neophodne informacije unutar poruke da bi klijent dobio trazeni sadrzaj. Zato ukoliko se domen ukuca u pretrazivac i pritisne enter  —  `http` se automatski pojavavljuje ispred naziva domena.
+<p class="tip right-tip" style="--span-row: 2;">Zvuci apstraktno, ali u nastavku teksta su prikazani prakticni primjeri HTTP poruka i objasnjenje. Ovaj paragraf je samo uvod.</p>
+
+HTTP ima definisan format koji odredjuje strukturu zahtjeva, kao i sve neophodne informacije da bi server shvatio sta se od njega trazi. Zato pri pretrazi naziva domene veb pregledac sam dopuni `http://` protokol u URL adresi ukoliko on nedostaje.
 
 
-HTTP je i ujedno protokol bez stanja (<i>stateless</i>), odnosno protokol koji ne odrzava konstantnu vezu izmedju klijenta i servera, vec se svaki upuceni zahtjev posmatra odvojeno. To znaci da server ne moze pratiti stanja i informacije o klijentu izvan tog zahtjeva i da svaki zahtjev mora sadrzati sve informacije potrebne za njegovo izvrsenje. Ove podatke sadrze <em>zaglavlja</em> HTTP poruke.
+HTTP je i ujedno protokol bez stanja (<i>stateless</i>), odnosno protokol koji ne odrzava konstantnu vezu izmedju klijenta i servera, vec se svaki upuceni zahtjev posmatra odvojeno. To znaci da server ne moze pratiti stanja i informacije o klijentu izvan tog zahtjeva, te da svaki zahtjev mora sadrzavati neophodne informacije potrebne za njegovo izvrsenje.
 
 <p class="tip right-tip" style="--span-row: 2;">Ukoliko je neophodno kontinuirano cuvati podatke o nekom <i>stanju</i> (npr. da je korisnik prijavljen), moguce je koristiti lokalno skladiste (Local Storage), kolacice (Cookies), sesije (Sessions) itd.</p>
 
@@ -36,13 +38,13 @@ HTTP je i ujedno protokol bez stanja (<i>stateless</i>), odnosno protokol koji n
 
 + Klijent uspostavi TCP vezu sa serverom
 + Klijent salje zahtjev i ceka odgovor 
-+ Server obradjuje zahtjev i salje svoj odgovor sa statusnim kodom o uspjesnosti obrade
++ Server obradjuje zahtjev i salje odgovor sa statusnim kodom o uspjesnosti obrade
 
 Dalje u tekstu su detaljnije objasnjene HTTP verzije, HTTP metode, HTTP zahtjev i odgovor, HTTP zaglavlje i podjela, proxy, kesiranje, kolacici, TCP veza, HTTPS, alati za pracenje HTTP saobracaja i HTTP statusni kodovi.
 
 ## HTTP verzije
 
-Nekada je za prikaz web stranice bilo dovoljno skinuti jedan dokument. Danas mnogi sajtovi zahtijevaju vise od jednog fajla za prikaz stranice. Kada bi web pregledaci uspostavili konekciju i cekali da se preuzme jedan fajl da bi poceo preuzimati drugi, proces bi bio znacajno usporeniji.
+Nekada je za prikaz web stranice bilo dovoljno preuzeti jedan dokument. Danas mnogi sajtovi zahtijevaju vise od jednog fajla za prikaz stranice. Kada bi web pregledaci uspostavili konekciju i cekali da se preuzme jedan fajl da bi poceo preuzimati drugi, proces bi uzimao vise vremena.
 
 + <span><i>HTTP/2.0</i> omogucava klijentu da zahtjeve salje istovremeno. Ova tehnika je poznata kao multipleksiranje i smanjuje vrijeme potrebno za ucitavanje stranice.</span>
 + <span><i>HTTP/1.1</i> dozvoljava samo jedan istovremeni zahtjev. </span>
@@ -52,18 +54,18 @@ Nekada je za prikaz web stranice bilo dovoljno skinuti jedan dokument. Danas mno
  <figcaption>Poredjenje efikasnosti HTTP/1.1 i HTTP/2 protokola.</figcaption>
 </figure>
 
-Na slici iznad vidimo da je klijent prvo trazio index.html kroz HTTP zahtjev. Server je poslao `200 OK` i trazeni fajl u odgovoru. Web pregledac potom rasclanjuje kod index.html fajla koji ukljucuje `style.css` i `script.js`: 
+Na slici iznad vidimo da je klijent prvo trazio `index.html` kroz HTTP zahtjev. Server je poslao `200 OK` i trazeni fajl u odgovoru. Web pregledac potom rasclanjuje kod `index.html` fajla koji ukljucuje `style.css` i `script.js`: 
 
 ```html
 <link rel="stylesheet" href="/style.css">
 <script src="/script.js"></script>
 ``` 
 Sto znaci da su `style.css` i `script.js` potrebni za prikaz stranice, te je klijent u prvom primjeru (primjer rada HTTP 1.1 protokola) poslao zahtjev za preuzimanje `style.css` i nakon sto mu je server dostavio fajl, poslao je jos jedan zahtjev za `scripts.js`. 
-U drugom primjeru (primjer rada HTTP 2 protokola) je poslao oba zahtjeva istovremeno i smanjio broj koraka zajedno sa potrebnim vremenom za prikazivanje stranice. 
+U drugom primjeru (primjer rada HTTP 2 protokola) je poslao oba zahtjeva istovremeno, smanjio broj koraka i ubrzao prikazivanje stranice. 
 
 ## HTTP metode
 
-Navedene su HTTP metode koje se najcesce primjenjuju, ali pored ovih postoji jos.
+Navedene su HTTP metode koje se najcesce primjenjuju, ali nisu ograniceni na njih.
 
 + <span><i>GET</i> dobija podatke od servera da bi ih klijent citao. U ovakvom zahtjevu URL bi trebao nositi sve informacije koje su potrebne serveru da bi pronasao trazeni sadrzaj. Primjer `https://nekisajt.ba/`<b>`pretraga?trazi=web+development&poredaj=najnovije`</b></span>
 + <span><i>POST</i> salje nove podatke serveru.</span>
