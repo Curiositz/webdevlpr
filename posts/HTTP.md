@@ -2,7 +2,7 @@
 title: Osnove HTTP protokola
 date: 2022-02-16T19:33:53.977Z
 author: Marijana Sevo
-summary: HTTP je temelj Word Wide Weba i komunikacijski protokol pomocu kojeg je moguce povezati se sa serverima sirom svijeta. Omogucava ucitavanje web stranica kroz hiperteksualne veze.
+summary: HTTP je temelj Word Wide Weba i komunikacijski protokol pomocu kojeg je moguce povezati se sa serverima sirom svijeta. Ovdje cete se sresti sa HTTP zahtjevima i odgovorima, verzijama, metodama, kolacicima, proksijima, TCP vezom i ostalim slojevima kroz koje putuje HTTP poruka.
 tags:
   - teorija
   - koncept
@@ -21,7 +21,7 @@ Primarna funkcija HTTP protokola je da uspostavi vezu sa serverom, trazi sve pot
 
 <a target="_blank" href="/posts/kako-rade-internet-i-web#url-adresa">URL adresa</a> identifikuje sa kojim serverom klijent zeli komunicirati, ali ne govori i sta se od njega trazi. Zato web pregledac salje <i>zahtjeve</i> kroz HTTP poruke, a HTTP protokol definise jezik izmedju <a target="_blank" href="/posts/kako-rade-internet-i-web#klijent-i-server">klijenta i servera</a>. 
 
-Kroz HTTP poruku klijent (web pregledac) naglasava kakvu reprezentaciju i u kom obliku zeli sadrzaj, kao i klijentovu namjeru (da cita, modifikuje, brise itd.). HTTP poruka je jednostavna tekstualna poruka koja moze biti zahtjev od klijenta ili odgovor od servera:
+Kroz HTTP poruku klijent (web pregledac) naglasava kakvu reprezentaciju i u kom obliku zeli sadrzaj, kao i klijentovu namjeru (da cita, modifikuje, brise itd.). HTTP poruka je jednostavna tekstualna poruka koja moze biti zahtjev (request) od klijenta ili odgovor (response) od servera:
 <i>Zahtjev</i> sadrzi HTTP metodu (`GET`, `POST`, `Put`, `DELETE`..) koja serveru govori sta klijent zeli da uradi, gdje se nalazi zeljeni sadrzaj i zaglavlja koja daju dodatne podatke o sadrzaju koji se trazi kao i vise informacija o samom klijentu.
 <i>Odgovor</i> ukljucuje statusni kod o uspjesnosti realizacije zahtjeva, zaglavlja sa dodatnim korisnim informacijama o odgovoru i sadrzaj odgovora.
 
@@ -65,7 +65,7 @@ U drugom primjeru (primjer rada HTTP 2 protokola) je poslao oba zahtjeva istovre
 
 ## HTTP metode
 
-Navedene su HTTP metode koje se najcesce primjenjuju, ali nisu ograniceni na njih.
+Navedene su HTTP metode koje se najcesce primjenjuju, ali nisu ogranicene na njih.
 
 + <span><i>GET</i> dobija podatke od servera da bi ih klijent citao. U ovakvom zahtjevu URL bi trebao nositi sve informacije koje su potrebne serveru da bi pronasao trazeni sadrzaj. Primjer `https://nekisajt.ba/`<b>`pretraga?trazi=web+development&poredaj=najnovije`</b></span>
 + <span><i>POST</i> salje nove podatke serveru.</span>
@@ -250,7 +250,7 @@ Ovaj tekstualni fajl ne moze imati vise od 4 KB.
 
 ## TCP veza i HTTP 
 
-Vidjeli smo kako HTTP omogucava web pregledacu da zahtijeva sadrzaj od servera, ali HTTP specifikacija ne govori o tome kako zahtjev ili odgovor putuju preko mreze do servera ili klijenta. Iz ovog razloga je potrebno zaviriti u slojeve ispod HTTP protokola. Mrezna komunikacija se sastoji od <i>vise slojeva</i> i svaki od njih ima odredjene odgovornosti.
+Vidjeli smo kako HTTP omogucava web pregledacu da zahtjeva sadrzaj od servera, ali HTTP specifikacija ne govori o tome kako zahtjev ili odgovor putuju preko mreze do servera ili klijenta. Iz ovog razloga je potrebno zaviriti u slojeve ispod HTTP protokola. Mrezna komunikacija se sastoji od <i>vise slojeva</i> i svaki od njih ima odredjene odgovornosti.
 
 HTTP se jos zove i <i>aplikacijski sloj</i> jer predstavlja jezik kojim dvije aplikacije komuniciraju preko mreze (npr. klijent i server).
 
@@ -281,7 +281,7 @@ Iz ovog razloga se dodaje jedan sigurnosni sloj izmedju HTTP-a i TCP-a. Taj sloj
  <figcaption>Pocetak sigurne HTTPS URL adrese.</figcaption>
 </figure>
 
-SLL je termin koji preovladava na internetu i koji se cesto koristi iako se misli na TLS. SSL nije siguran i odavno je zastario. Vremenska linija razvoja SSL i TLS protokola:
+SSL je termin koji preovladava na internetu i koji se cesto koristi iako se misli na TLS. SSL nije siguran i odavno je zastario. Vremenska linija razvoja SSL i TLS protokola:
 
 1. <span><b>SSL v1.0</b> je 90ih razvio Netscape i nikada nije bio objavljen zbog sigurnosnih problema</span>
 2. <span><b>SSL v2.0</b> je pusten 1995. godine, ali i dalje ima mane</span>
@@ -301,7 +301,7 @@ Da bi sajt imao HTTPS neophodno je da ima funkcionalan <em>digitalni SSL certifi
 + Javni kljuc (privatni kljuc se ne otkriva)
 + itd.
 
-Kada klijent isprva uputi HTTP zahtjev, on pokusava naci certifikat na serveru, a potom provjerava izdavaca certifikata u listi poznatih autorizovanih izdavaca. Ukoliko ga ne moze naci u CA listi ili certifikat ne postoji, web pregledac upozorava korisnika o tome. Nakon sto je certifikat potvrdjen izvrsava se SLL inicijalizacija i rukovanje (<i>SLL handshake</i>), te je moguce ostvariti sigurno slanje podataka. 
+Kada klijent isprva uputi HTTP zahtjev, on pokusava naci certifikat na serveru, a potom provjerava izdavaca certifikata u listi poznatih autorizovanih izdavaca. Ukoliko ga ne moze naci u CA listi ili certifikat ne postoji, web pregledac upozorava korisnika o tome. Nakon sto je certifikat potvrdjen izvrsava se SSL inicijalizacija i rukovanje (<i>SSL handshake</i>), te je moguce ostvariti sigurno slanje podataka. 
 
 ## Alati za pracenje HTTP saobracaja
 
