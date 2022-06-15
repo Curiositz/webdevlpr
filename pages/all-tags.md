@@ -66,6 +66,7 @@ thumbnail: /static/img/logo-bg-square.png
   
  <section class="tag-section">
     <h3 class="main-tag"><a href="/tags/JavaScript/">JavaScript</a></h3>
+    <span class="tag"><a href="/tags/testiranje/">Testiranje</a></span>
     <!-- <span class="tag"><a href="#">Objekat</a></span>
     <span class="tag"><a href="#">Array</a></span> -->
   </section>
