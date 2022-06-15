@@ -20,7 +20,7 @@ thumbnail: /static/img/logo-bg-square.png
 <hr>
 
 <section class="technologies">
-  <p>Dopada mi se ideja poznavanja full stack tehnologija, ali se ovog trenutka zanimam za <em>front end</em> put.</p>
+  <p>Zelim ovladati full stack tehnologijama, ali sam trenutno fokusirana na <em>front end</em> put.</p>
   <div class="technologies-icons">
     <i role="img" aria-label="HTML" class="fab fa-html5 fa-3x"></i>
     <i role="img" aria-label="CSS" class="fab fa-css3-alt fa-3x"></i>
