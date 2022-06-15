@@ -100,7 +100,13 @@ HTML i CSS nisu programski jezici i lako je savladati osnove.
 
 ## Folder sa skriptama
 
-Ovaj folder je namjenjen fajlovima sa skriptnim kodom poput JavaScripta i koristi se za dodavanje interaktivnog aspekta web stranici (klikom moze aktivirati i prikazati mali prozor, omoguciti korisniku da uveca i umanji sliku, kreirati kompleksnije animacije i <em>mnogo</em> vise od toga). JavaScript kao najpopularniji programski jezik weba otkljucava nove dimenzije kreativnosti i moci, ali je i izazovniji za savladati. Medjutim, karakteristike JavaScripta su slicne drugim programskim jezicima i poznavanje njegovih osnova olaksava ucenje drugih programskih jezika.
+Ovaj folder je namjenjen fajlovima sa skriptnim kodom poput JavaScripta i najcesce koristi se za dodavanje interaktivnog aspekta web stranici (dodavanje HTML elemenata, izmjenu postojeceg sadrzaja, promjenu stilova, reagovanje na radnje korisnika poput pomjeranje misa, klik, pritisak tipke na tastaturi, slanje zahtjeva serveru, upravljanje kolacicima, postavljanje pitanja korisniku, pamcenje podataka u lokalnom skladistu itd.). Medjutim, JavaScript omogucava i kreiranje servera, mobilnih aplikacija itd.
+
+JavaScript kao najpopularniji programski jezik weba otkljucava nove dimenzije kreativnosti i moci, ali je i izazovniji za savladati. Medjutim, karakteristike JavaScripta su slicne drugim programskim jezicima i poznavanje njegovih osnova olaksava ucenje drugih. Ono sto JavaScript cini jedinstvenom je:
+
++ Potpuna integracija sa HTML/CSS
++ Proste stvari je jednostavno izvesti
++ Podrzavaju je svi bolji pretrazivaci - sto je razlog jer je najrasprostranjeniji alat na webu
 
 Sa sledecim kodom mozemo izmijeniti sadrzaj `<h1>` naslova iz teksta "Pocetna stranica" u "Dobrodosli!": 
 
