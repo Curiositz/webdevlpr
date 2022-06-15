@@ -25,7 +25,7 @@ Kroz HTTP poruku klijent (web pregledac) naglasava kakvu reprezentaciju i u kom 
 <i>Zahtjev</i> sadrzi HTTP metodu (`GET`, `POST`, `Put`, `DELETE`..) koja serveru govori sta klijent zeli da uradi, gdje se nalazi zeljeni sadrzaj i zaglavlja koja daju dodatne podatke o sadrzaju koji se trazi kao i vise informacija o samom klijentu.
 <i>Odgovor</i> ukljucuje statusni kod o uspjesnosti realizacije zahtjeva, zaglavlja sa dodatnim korisnim informacijama o odgovoru i sadrzaj odgovora.
 
-<p class="tip right-tip" style="--span-row: 2;">Zvuci apstraktno, ali u nastavku teksta su prikazani prakticni primjeri HTTP poruka i objasnjenje. Ovaj paragraf je samo uvod.</p>
+<p class="tip right-tip" style="--span-row: 2;">Zvuci apstraktno i zato su u nastavku teksta prikazani prakticni primjeri HTTP poruka i njihova objasnjenja.</p>
 
 HTTP ima definisan format koji odredjuje strukturu zahtjeva, kao i sve neophodne informacije da bi server shvatio sta se od njega trazi. Zato pri pretrazi naziva domene veb pregledac sam dopuni `http://` protokol u URL adresi ukoliko on nedostaje.
 
@@ -362,6 +362,7 @@ Ova klasa kodova se koristi za oznacavanje greske servera tokom obrade zahtijeva
 
 ## Dodatni izvori
 
++ <span>Uz ovaj video mozete prakticno istraziti zahtjeve, odgovore, zaglavlja i njihove kodove: <a target="_blank" href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">Postman Beginner's Cousrse - API Testing</a></span>
 + <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP — MDN Web Docs</a></span>
 + <span><a target="_blank" href="https://code.tutsplus.com/series/http-succinctly--net-33683">HTTP sazeto</a></span>
 
