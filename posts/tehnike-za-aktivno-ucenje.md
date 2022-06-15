@@ -86,14 +86,6 @@ Komentarisanje koda i pisanje dokumentacije su navike na kojima cete biti zahval
 
 Biljeske i dalje mogu biti korisne u <i>specificnim</i> situacijama. Na primjer, ukoliko ne mozete usvojiti nesto sto vam uporno zatreba ili za organizaciju zadataka. Ako se nesto moze lako pronaci na internetu obicno nije vrijedno zapisivanja jer te biljeske vjerovatno nece biti ponovo koristene. 
 
-<!-- TODO:[]: napisati markdown clanak []:dokumentacija clanak? https://www.youtube.com/watch?v=R6zeikbTgVc -->
-
-<!-- TODO:[]: Napisati clanak o tome zasto komentarisati kod []: Most people think the comments are there to explain the code to other coders, but it's the code that's there to explain the comments to the computer. Drugi razlog je to sto cete graditi sjajnu naviku od pocetka. Jedna od vaznih vrlina dobrog programera je komunicirati kroz komentare sto je moguce jasnije. Sa razvijanjem vjestina cete prepoznati sta je potrebno, a sta nije potrebno komentarisati. -->
-
-<!-- Sastoji se od nekoliko koraka 1 Ucenje. 2 Pokusati objasniti (djetetu) jednostavnim izrazima. U toku ovog koraka je neizbjezno pronaci rupe u znanju ali to je cilj. 3 Popuniti praznine. Pronaci informacije koje nedostaju i povezati ih sa ostalim znanjem. Svrha ovog koraka je fokusirati se na slabosti. 4 Pojednostaviti. Nije lako otkloniti nered i visak informacija, te objasniti nesto dovoljno jasno da i mala djeca mogu razumjeti.  4. korak prisiljava dublje razmisljanje o temi, razumijevanje kako se dijelovi informacija uklapaju i sprecava da previdimo praznine u znanju. Umjesto pukog kopiranja koda dobro je <em>kucati kod</em> kada pratite instrukcije: ovako vise obracamo paznju na detalje, sintaksu, kako se pise funkcija, kako se koriste parametri unutar funkcije, gdje ide tacka i zarez itd. Kroz prepisivanje se dobija uvid u to kako izgleda i kako se pise dobar kod. Korak dalje je probati <em>napisati kod rukom na papir</em>? 
-
-Pisanje dokumentacije (poput `README.md` dokumenta na GitHubu) ce takodje mnogo vise doprinjeti od biljeski. Pricamo o navikama koje i mnogi iskusniji programeri previde. One obezbjedjuju solidniji pocetak i naknadno laksi put pred sobom. Znacajno doprinose usvajanju i utemeljenju znanja (pored toga sto su vrlo privlacne poslodavcima i imate sta pokazati). Razlika izmedju komentara i dokumentacije je ta sto sa komentarima objasnjavate sta radi dio koda, a sa dokumentacijom, sa kojim tehnologijama, kako, sta radi vasa aplikacija, sta je njena svrha itd. naucite markdown TODO: []: napisi clanak o markdown-u []:izazovi za oblast koja se obradjuje--> 
-
 ## Pauze
 
 Za optimalniji efekat ne treba podcjeniti vaznost redovnih pauza kako bi se mozak oporavio. Cilj je raditi pametnije umjesto teze. 
