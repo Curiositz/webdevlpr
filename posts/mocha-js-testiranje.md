@@ -147,7 +147,10 @@ var calculator = require("../index");
 expect(calculator.someFunction(Infinity)).to.be.NaN;
 ```
 
-Poslednja linija je tvrdnja i izgleda kao recenica na engleskom jeziku: ocekujem da `someFunction(Infinity)` iz fajla `index.js` vrati vrijednost `NaN`
+<p class="tip right-tip" style="--span-row: 2;">
+Chai ima 3 razlicita stila tvrdnji: <code>expect</code>, <code>assert</code> i <code>should</code>. Postoje manje razlike u stilovima - <a target="_blank" href="https://www.chaijs.com/guide/styles/#differences">link</a> za vise informacija. One za pocetak nisu znacajne i ovdje je prikazan <code>expect</code>.</p>
+
+Poslednja linija je tvrdnja i izgleda kao recenica na engleskom jeziku: ocekujem da `someFunction(Infinity)` iz fajla `index.js` vrati vrijednost `NaN`.
 
 
 
