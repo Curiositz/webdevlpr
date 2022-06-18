@@ -75,10 +75,10 @@ cd mochatest
 cat > index.js
 npm init -y
 npm install mocha chai --save-dev
-code put/do/foldera
+code .
 ```
 
-<p class="tip right-tip">6. `code put/do/foldera` komanda otvara projekat u VSC-u.</p>
+<p class="tip right-tip">6. Otvara projekat u VSC-u ako terminal pokazuje na folder u kom je projekat ili `code put/do/foldera`.</p>
 
 1) Prvo kreiramo `mochatest` folder kroz terminal. 
 2) Druga linija terminalu pokazuje da mijenjamo folder na kom radimo. 
