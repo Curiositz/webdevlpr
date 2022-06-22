@@ -6,7 +6,7 @@ summary: Mocha je JavaScript framework za testiranje. Bogata je funkcijama i rad
 tags:
   - testiranje
   - javascript
-thumbnail: /static/img/cs50-harvard-theatre-sanders.png
+thumbnail: /static/img/automated-testing-with-mocha.jpg
 ---
 
 Mocha je <i>JavaScript framework za testiranje</i>. Bogata je funkcijama i radi na Node.js. Koristi se za komponentno (eng. unit) i integraciono testiranje (eng. integration testing), i odlican je kandidat za razvoj vodjen ponasanjem (eng. Behavior Driven Development ili BDD).
@@ -141,8 +141,8 @@ describe('Calculator', () => {
 Mozda je Chai najlakse shvatiti iz primjera. Prvo cemo predstaviti Chai biblioteku i ocekivanja na pocetku testnog fajla, ali i gdje ce se nalaziti kod aplikacije.
 
 ```js
-var expect     = require("chai").expect;
-var calculator = require("../index");
+let expect     = require("chai").expect;
+let calculator = require("../index");
 
 expect(calculator.someFunction(Infinity)).to.be.NaN;
 ```
@@ -168,8 +168,8 @@ expect(calculator.add(4, 2)).to.equal(6);
 I nas `indexTest.js` bi sada trebao izgledati ovako:
 
 ```js
-var expect     = require("chai").expect;
-var calculator = require("../index");
+let expect     = require("chai").expect;
+let calculator = require("../index");
 
 describe('Calculator', () => {
   describe('Addition', () => {
@@ -223,8 +223,8 @@ put\do\projektnog\foldera> npm test
 Znamo da kod radi ono sto bi trebalo! Recimo da nema potrebe za refaktorizacijom i idemo dalje. Pisemo test za dijeljenje dva broja i znamo da ce se funkcija koja dijeli dva broja zvati `divide()`. Chai ocekuje da ce funkcija `divide(50, 5)` vratiti vrijednost 10, ali test ne moze proci kako funkcija jos ne postoji.
 
 ```js
-var expect     = require("chai").expect;
-var calculator = require("../index");
+let expect     = require("chai").expect;
+let calculator = require("../index");
 
 describe('Calculator', () => {
   describe('Addition', () => {
@@ -283,8 +283,8 @@ put\do\projektnog\foldera> npm test
 Medjutim, dijeljenje sa nulom u JavaScriptu daje beskonacno. Ono sto nam vise odgovara je `NaN` (Not a Number). Pisemo test koji ce potvrditi da bilo koje dijeljenje sa nulom vraca `NaN`.
 
 ```js
-var expect     = require("chai").expect;
-var calculator = require("../index");
+let expect     = require("chai").expect;
+let calculator = require("../index");
 
 describe('Calculator', () => {
   describe('Addition', () => {
