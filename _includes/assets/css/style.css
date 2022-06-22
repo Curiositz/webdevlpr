@@ -934,7 +934,7 @@ adding margin top to the first one */
   /* Article: wrap code on bigger screens */
   code[class*="language-"],
   pre[class*="language-"], pre {
-    white-space: pre-wrap!important;
+    white-space: pre;
   }
 
 }
