@@ -68,7 +68,7 @@ I projektne skripte:
 
 Praktican primjer:
 
-<iframe class="wide-img" style="border: 1px solid #999;width: 100%; height: 600px" src="https://embed.plnkr.co/plunk/hwl2KB4FPUSXO3k3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe  class="wide-img" frameborder="0" width="100%" height="500px" src="https://replit.com/@srhx/Mocha-Chai-and-Sinon?embed=true"></iframe>
 
 ## Mocha Chai i Sinon instalacija
 
