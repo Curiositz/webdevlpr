@@ -61,14 +61,17 @@ I projektne skripte:
   <script></script>
 
   <!-- Testovi. -->
-  <script ></script>
+  <script ></script>c
 ```
 
-`<link rel="stylesheet" href="">` mora biti u zaglavlju, `<script></script>` moze biti i u zaglavlju i u tijelu i `<div id="mocha"></div>` mora biti u tijelu `.html` dokumenta. `mocha.run();` mora biti nakon `<div id="mocha"></div>`.
++ <span>`<link rel="stylesheet" href="">` mora biti u zaglavlju,</span>
++ <span>`<script></script>` moze biti u zaglavlju ili tijelu.</span>
++ <span>`<div id="mocha"></div>` mora biti u tijelu `.html` dokumenta i</span>
++ <span>`mocha.run();` mora biti nakon `<div id="mocha"></div>`.</span>
 
 Praktican primjer:
 
-<iframe  class="wide-img" frameborder="0" width="100%" height="500px" src="https://replit.com/@srhx/Mocha-Chai-and-Sinon?embed=true"></iframe>
+<iframe  class="wide-img" frameborder="0" width="100%" height="500px" src="https://replit.com/@srhx/Mocha-Chai-and-Sinon?lite=true"></iframe>
 
 ## Mocha Chai i Sinon instalacija
 
