@@ -61,7 +61,7 @@ I projektne skripte:
   <script></script>
 
   <!-- Testovi. -->
-  <script ></script>c
+  <script></script>
 ```
 
 + <span>`<link rel="stylesheet" href="">` mora biti u zaglavlju,</span>
