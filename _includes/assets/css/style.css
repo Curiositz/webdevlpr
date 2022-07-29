@@ -155,6 +155,7 @@ table {
   --light-bg-hot-pink: #d36699;
   --light-about-pink: #ffe5ef;
   --light-pastel-green: #D1E1DD;
+  --light-code: #000;
   /* Default colors assigned #874760 ea4c89*/
   --bg-color: var(--light-bg-color);
   --text-color: var(--light-text-color);
@@ -162,6 +163,7 @@ table {
   --bg-hot-pink: var(--light-bg-hot-pink);
   --about-pink: var(--light-about-pink);
   --pastel-green: var(--light-pastel-green);
+  --code: var(--light-code);
 
 
   /* Other */
@@ -179,6 +181,7 @@ table {
   --dark-bg-hot-pink: #874760;
   --dark-about-pink: #2a2124;
   --dark-pastel-green: #445a56;
+  --dark-code: #FC9835;
   /* Dark colors assigned */
   --bg-color: var(--dark-bg-color);
   --text-color: var(--dark-text-color);
@@ -186,6 +189,7 @@ table {
   --bg-hot-pink: var(--dark-bg-hot-pink);
   --about-pink: var(--dark-bg-color);
   --pastel-green: var(--dark-pastel-green);
+  --code: var(--dark-code);
 }
 
 ::selection {
@@ -226,7 +230,7 @@ h3 {
 
 h5, h6 {
   position: relative;
-  left: 15px;
+  left: 25px;
   font-style: italic;
 }
 
@@ -693,10 +697,37 @@ pre {
 	padding: 1.25em 1em;
 }
 
+.basic-pre {
+  background-color: transparent;
+  color: var(--code);
+  padding: 0 10px;
+  font-family: monospace;
+}
+
 code {
   font-family: monospace;
   white-space: pre-wrap;
-  word-break: break-all;
+  color: var(--code);
+}
+
+/* reveal spoiler on tap */
+
+.spoiler {
+  background: var(--text-color);
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background 1s ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.spoiler:active {
+  background: transparent;
+  color: var(--text-color);
 }
 
 /* Sticky .copy-section causes code to 
