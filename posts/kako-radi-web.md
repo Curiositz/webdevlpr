@@ -9,7 +9,7 @@ tags:
 thumbnail: /static/img/kako-radi-internet.jpg
 ---
 
-Cilj teksta je bolje razumijevanje necega sto koristimo svakodnevno. Ucenje osnova webu isprva nije neophodno za pisanje koda, ali na duze staze je kljucno za <i>pisanje boljih web aplikacija</i> i rjesavanje problema pri suocavanju sa greskama. Pogled iz perspektive web developera.
+Cilj teksta je bolje razumijevanje necega sto koristimo svakodnevno. Ucenje osnova weba isprva nije neophodno za pisanje koda, ali na duze staze je kljucno za <i>pisanje boljih web aplikacija</i> i rjesavanje problema pri suocavanju sa greskama. Pogled iz perspektive web developera.
 
 
 ## Klijent i server
